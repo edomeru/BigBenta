@@ -1,0 +1,1015 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.TermsFragment">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/myCoordinator"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:isScrollContainer="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"  >
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="8dp"
+                card_view:cardCornerRadius="2dp">
+
+    <!--<WebView-->
+        <!--android:id="@+id/webView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"  >
+                <TextView
+                    android:id="@+id/adstitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Classified Ads
+BigBenta Philippines"
+
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+    <TextView
+        android:id="@+id/adsbody"
+        android:textColor="@color/mediumBlue"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_17sdp"
+        android:layout_marginBottom="50dp"
+        android:layout_height="wrap_content"
+        android:text="
+Introduction
+BigBenta is an e-commerce business venture created to support individuals, micro, small and medium enterprises (MSME) and reach end-user customers in the Philippines. Our aim is to provide an additional sales channel to sellers and merchants as well as to be a reliable outlet for buyers and consumers is making their sales purchase decision. To support our business goal while continuously improving customer and merchant experience, BigBenta will constantly gather information relevant to the business.
+
+BigBenta respects every individual’s right to privacy. Information we gather from our members and visitors throughout our websites and related applications (collectively referred to as “BigBenta apps” or simply “BB apps”), will strictly follow our privacy statement. This Statement applies solely to information gathered at our BB apps.
+
+WHAT KIND OF INFORMATION DO WE COLLECT?
+We gather information through our BB apps at every possible area of the business. The information we gather are dependent on whether you are a visitor (“Visitor”) or a registered member (“Member”).
+
+Information from Visitors
+
+We gather the following information when you visit our BB apps, or any of our services. This information includes but not limited to:
+
+Log information;
+Device information; and
+Other Information.
+Log information includes but is not limited to a) time or duration of your use; and b) browser cookies, and other identifiers. A cookie is a text file that our server places on your computer's hard drive as a unique identifier which track usage patterns and deliver customizable user experience to users. Our cookies have an expiration date of up to 30 days. Device information includes but is not limited to a) Subscriber Identity Module (SIM) number for mobile devices; b) IP address; c) operating system version; etc.
+Information from Members
+
+In addition to the information mentioned above, we gather personal information which include the following:
+
+Name;
+Mobile Number;
+E-mail address;
+Birthday;
+Gender; and
+Location.
+Mandatory information such as your Name, Mobile Number and E-mail address must be provided to complete the registration. Optional information such as Gender and Location will be highly appreciated so we can get to know you more and customize our services for you. Please be advised that information provided by Members and Visitors which are provided to us and/or posted by you will be processed and will become public knowledge in part but fully in line with our privacy policy.
+PRIVACY PROTECTION OF CHILDREN
+BigBenta is intended for use of Adults, 18 years of age and above. We do not allow children to register, and we do not ask for and gather personal information from a child under eighteen (18) years of age (the “child”). Upon discovery that a child has provided us with personal information, we will delete the information within a reasonable time of between 2 to 5 days. We however, do not guarantee that the information provided by the child was not used by our system prior to the deletion.
+
+USAGE OF YOUR INFORMATION
+Primarily, the information we gather from our Members and Visitor will be utilized to service you.
+
+Services to Our Members and Visitors
+
+For Members, these services include but are not limited to SMS, sending e-mails, and Push Notifications initiated manually or automatically by our system. Depending on your opt-in preference, we also send additional announcements about products, services, and special promotions.
+
+Research and Development (R and D) and Continuous Improvement
+
+The information gathered may also be used for research and development purposes that will lead to introducing new products and services with the intent of providing convenience and supporting customer lifestyle. Likewise, we always seek to continuously improve our existing products and services to bring better customer experience and loyalty.
+
+Market Analysis
+The information we gather may be used for statistics, market analysis and report generation to our members and partners.
+
+Location based Services
+
+The location you provide are used to develop and deliver location based services in our system.
+
+Services to Third Parties
+
+Subject to applicable law, BigBenta may share, transfer, and disclose all the information we gather, to the following:
+
+Companies that form part of our group of companies ,the Group Companies, to enable the Group Companies to offer their respective services/products;
+Government Authorities, when legally required to do so;
+Service Providers that help us provide our services, to the extent needed to perform their duties and their functions; and
+Purchasers of our rights and obligations relating to the services we provide. In this case, all information gathered are deemed assets that may be transferred to such third parties.
+In addition, the information we gather may also be shared, transferred and disclosed, when disclosure is necessary:
+
+To protect the rights and interests of BigBenta Corporation (Philippines), the Group Companies, business partners, customers or third parties, as may be required and permitted by law; and
+To pursue legitimate interests, as may be required or permitted by law.
+Marketing and Advertising
+
+Information including graphics and photos posted on our BB apps may be used to advertise the site in different media, including but not limited to - Above-the-line marketing, Below-the-line marketing, Search Engine marketing, Social Media advertising. In addition, this information may be used for the conduct of promotions and advertisements through e-mails, SMS and Push Notifications.
+
+INFORMATION STORED AND TRANSFERRED OVERSEAS
+By using BigBenta service, you consent to the gathering, transfer, processing and storage of information outside of the Philippines, as may be consistent with our Privacy Policy.
+
+INFORMATION SECURITY POLICY
+Though no BB apps or internet transmission is completely secure, we practice extreme precautions to protect your information by using secure servers and storage system. Sufficient physical and technical architecture and procedures are employed to safeguard and secure the information from unauthorized or unlawful access and processing.
+
+THIRD PARTIES ACCESS TO INFORMATION
+Our BB apps offer listings, chats, forums and/or message boards, as well as links to third-party websites. When you click on these links, you effectively leave our BB apps. We are not responsible for the protection and privacy of any information you provide to these other websites. You are responsible for reading their (other websites) privacy policies especially since it may differ from ours.
+
+We also use third-party advertising companies to serve ads when you visit our BB apps. These companies may use summary information (but NOT detailed information such as your name, address, email address, or telephone number) about your visits to our BB apps and to other websites in order to provide advertisements about goods and services that may be of interest to you.
+
+We however, do not control such gathering of information and we are not responsible for the same. If you would like more information please place your comments and queries and we will respond to them accordingly.
+
+CHANGES IN OUR PRIVACY POLICY
+If BigBenta privacy policy changes, you will be advised through notifications and announcements in our BB apps. We encourage members and visitors to visit our website from time to time to review any changes in our privacy policy.
+
+COMPLAINTS AND DISPUTES RESOLUTION
+For complaints and disputes, you may notify us at BigBenta Philippines by submitting a complaint or dispute ticket. We are committed to addressing complaint and disputes at the shortest time possible.  
+
+Disclaimer
+BigBenta Philippines
+May, 2015
+
+BigBenta Philippines assumes no responsibility whatsoever for any consequence relating directly or indirectly to any action you take, or fail to make, based on the content, information, services or other materials found in this system.
+
+BigBenta Philippines does not guarantee, and will not be responsible for any damage and/or loss related to the accuracy, completeness and/or timeliness of the contents found in the system.
+
+BigBenta Philippines may and can include links to external systems in which BigBenta Philippines has no responsibility of any kind on these systems. The use and/or access of these external systems are completely and solely at your own risk.
+
+BigBenta PHILIPPINES DISCLAIMS ALL EXPRESS AND IMPLIED WARRANTIES WITH REGARD TO THE CONTENT, INFORMATION, SERVICES, AND MATERIALS CONTAINED ON THIS SYSTEM, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. ALL SUCH INFORMATION, SERVICES, AND MATERIALS ARE PROVIDED AS IS AND AS AVAILABLE WITHOUT ANY WARRANTY OF ANY KIND.
+
+IN NO EVENT SHALL BigBenta PHILIPPINES BE LIABLE FOR ANY SPECIAL, INDIRECT, PUNITIVE, INCIDENTAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, BUSINESS, DATA OR PROFITS, LITIGATION AND THE LIKE, WHETHER BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE MEMBER AND/OR USER ACKNOWLEDGES AND AGREES THAT THE LIMITATIONS SET FORTH ABOVE ARE FUNDAMENTAL ELEMENTS OF THIS AGREEMENT AND THE SYSTEM WOULD NOT BE PROVIDED TO YOU IN THE ABSENCE OF SUCH LIMITATIONS.
+
+BigBenta PHILIPPINES emphasizes that it is mainly providing a venue for sellers to offer their goods and/or services on-line and shall have no direct participation in the eventual transaction/s between a particular buyer and seller. Hence, it is reiterated that BigBenta PHILIPPINES shall not be held responsible and accountable for any breach of contract and/or damages arising from such transactions. Nonetheless, if for any reason it is wrongfully impleaded in any suit, the MEMBER and/or USER agree that the venue for the action shall exclusively be the court/s of Paranaque City to the EXCLUSION of other courts.
+
+Indemnification
+The member and/or the user agrees to indemnify, defend and hold harmless BigBenta Philippines from any liability, loss, claim and expense (including attorneys' fees) related to (i) your violation of this agreement, (ii) your submission of any infringing or illegal content to this system, and (iii) your use of this system.
+
+List of BigBenta Rules Violations
+BigBenta Philippines
+May, 2015
+
+ADS DUPLICATION
+Posting 2 or more of the same active advertisement under one Main Category. If the advertise item or service can be posted to more than one sub-category under a Main Category, one should choose the best category and post it there.
+COPYING OTHER MEMBER'S ADS
+Copying in full or in part other member's advertisement item details or description and using them for their own posted ads.
+HIJACKING ADS
+Posting messages on another seller's advertisements with the goal of advertising their own items, businesses or services.
+INAPPROPRIATE FEEDBACK
+Seller feedback, regardless whether positive or negative can only be given by the buyer or visitor if a transaction is on-going or completed with the designated seller. For clarifications, please refer to our Feedback Posting Policy.
+IMPOSTER/IDENTITY THEFT
+Developing a member account using another member’s profile information for the purpose of committing fraud and deceit to other members of the BB Apps.
+KEYWORD SPAMMING
+Loading variety of keywords that are not representing the advertised items or service for the purpose of being ahead of search results initiated by visitors or potential buyers.
+MISLEADING ADS INFORMATION
+This violation includes, but are not limited to, incorrect pricing, incorrect details and descriptions, location, condition of the items, photos and images unrelated to the advertisement.
+MULTIPLE ACCOUNTS
+Members creating multiple accounts with the intention of posting the same set of ads multiple times over a given period.
+PROFANITY/OBSCENE POSTS
+Ad message posts and feedback which can be considered offensive, such as threats, profanity and obscene words and languages.
+SPAM MESSAGE
+Sending unsolicited private messages to members with the intention of advertising their products and services.
+SCAM OR FRAUD ADS
+Advertisements posted to defraud/scam visitors and registered members. Posting pirated and other illegal items are also included.
+STOLEN IMAGES
+Using images from other advertisements or sources on their own posted ads.
+UNDELETED SOLD ITEMS
+After a successful transaction, posted items should be declared sold (by clicking Item Sold button) or by simply deleting the advertisement.
+UNAUTHORIZED LINKS
+Posting external website links that are not authorized by BigBenta as part of the seller’s advertisement.
+WRONG CATEGORY ADS
+Advertisements that were posted using wrong categories or purposely in a different categories than to gain mileage views.
+ADVERTISED ITEMS NOT ALLOWED OR SUPPORTED
+Ads related to Online Gaming are strictly not allowed.
+Ads related to Virtual currencies (ie., PayPal, Bitcoins, eCurrencies, etc) are likewise not allowed.
+Ads related to loan application assistance offered by individuals who are not authorized by licensed companies to provide loans are not allowed.
+Prescription medicines being offered by individual are not allowed.
+Travel and visa assistance services being offered by individual are not allowed.
+OTHER VIOLATIONS ANALOGOUS TO THE FOREGOING.
+Classified Ads Posting Policy
+BigBenta Philippines
+May, 2015
+
+To post advertisements, one must be a member and accept the Terms and Conditions of BigBenta.
+All advertisements must be posted in the correct category and price. Members must indicate the location of the item or service being offered. BigBenta administrators can delete, amend and/or rearrange any advertisement that, in the opinion of BigBenta, is not posted in the correct category.
+Members are not allowed to post two (2) similar active advertisements. “Similar active advertisements” is defined as two or more active advertisements selling the same product or service, even if these advertisements have different images and details. If your advertisement falls under more than one category, you must select the best category to post your advertisement.
+Member cannot be allowed to repost an advertisement if it’s still active and valid on the BB Apps for at least four (4) days. Once the advertisement nears expiry (less than 4 days valid) or has already expired or deleted, reposting of that specific advertisement is allowed. Deleted or expired advertisements may be reposted.
+Posting of advertisements for free is only a privilege. BigBenta may, at any time without need of prior notice, remove or disallow posts of free advertisement, at its sole discretion.
+BigBenta reserves the right to impose the applicable fees prior to allowing any advertisement to be displayed in any of its BB apps.
+Posting multiple items (related or unrelated) in one (1) advertisement is strictly prohibited. Examples;
+For the Cars category:
+Brand new cars: 1 vehicle (make and model) per advertisement
+Used or 2nd hand cars: 1 vehicle per advertisement
+For the Real Estate category:
+For Sale Properties – 1 property type per advertisement
+For Rent Properties – 1 property type per advertisement
+Advertisements that are no longer valid (e.g. sold items, etc.) must be deleted.
+Any advertisement posted as a response message to an advertisement (also known as hijacking advertisement of other members is strictly prohibited.
+BigBenta prohibits the advertisement and promotion of counterfeit goods that include, but is not limited to, replicas and/or unauthorized copies. Such posts will immediately be deleted without prior notice. BigBenta shall hold the member accountable for his/her own ads and posts that infringes, any patent, copyright, trade or service mark/name or any other intellectual property right governed under applicable laws.
+Intellectual property owners are encouraged to report posts, ads, and/or listings, as the case may be, that are suspected to be in violation of copyright, patents, trade or service marks and/or any other intellectual property rights to BigBenta through our complaint reporting facility.
+Any misleading information in advertisements is strictly prohibited. Misleading information includes, but are not limited to:
+Incorrect pricing
+Incorrect location
+Incorrect item description, specifications and condition
+Incorrect images and photos
+Advertised items must comply with applicable government mandated product registrations and licensing requirements as required under applicable laws, rules and regulations prior to posting. An example of such are as follows:
+Rice, corn, grains, etc advertisements must with the registration requirements pursuant to the Rules and Regulation of PD 4;
+Processed/Packed Food advertisement must comply with product registration from the Center for Food Regulation and Research, FAD;
+Fertilizer advertisements must with license requirements under FPA Memo Circular No. 96-06 Series of 1996 and PD 114.
+System Usage Policies
+BigBenta Philippines
+May, 2015
+
+It is understood that as a member of BigBenta, you are accountable for the security of your membership account which includes username and password. You are not to share your username or password with anyone or to adopt a username which is deemed as obscene, racist, hateful and/or inflammatory.
+As a rule, each user is allowed only one (1) active membership account.
+As membership in BigBenta is voluntary, any membership therefore, access and/or usage of any services provided by BigBenta will be taken as an admission that you have read, understood and agreed to all the rules and policies set by BigBenta, including but not limited to the Privacy Policy, Classified Ads Posting Rules and BigBenta Terms and Conditions.
+As a member of BigBenta, you shall not use the system to violate any law (local and/or international). This includes any reference or promotion of illegal activities is strictly prohibited in the system.
+You as a member is responsible for any content that you contribute to the system. The opinions, suggestions, expressions and/or statements expressed by members through their posts submitted to our system are their own and do not represent in any way the views of BigBenta who bears no responsibility whatsoever for any of the foregoing content.
+As a member, it is understood that you should not give any personal information of other persons without their permission.
+Sending unsolicited e-mails; posting SPAM; or sending SMS to any part of BigBenta is strictly prohibited.
+BigBenta has all the right to block any member from using the system that, in the view of BigBenta, violates or tends to violate any law, rule and regulation as well as existing BigBenta system rules and policies. BigBenta may also cancel and/or amend advertisements, listings and/or posts which, in the view of BigBenta, violates or tends to violate these laws, rules and regulations, and existing BigBenta system rules and policies.
+Feedback Posting Rules
+BigBenta Philippines
+May, 2015
+
+As a general rule in BigBenta, feedbacks are allowed to be given to any member only after an exchange of goods and/or services have been made. However, transactions which started might not be completed due to several valid reasons. Therefore, any feedback given to any member prior to any transaction is considered as a violation and may be taken out, removed and/or erased by BigBenta Philippines.
+Any feedback given to members for an incomplete transaction can be reviewed and acted upon by BigBenta provided communication and negotiation of transaction were done using BigBenta messaging.
+Only one (1) feedback is allowed per transaction. A transaction involving a number of items is still considered as only one (1) or a single transaction.
+Members receiving a feedback can file a dispute using the Feedback Dispute Resolution process.
+BigBenta Philippines reserves the right to delete any feedback that, in its own view, violates or tends to violate any of the foregoing rules.
+Inactive Members (Deactivated)
+BigBenta Philippines
+May, 2015
+
+Any member who has not been active by signing in to his/her account for the past twelve (12) months will be deemed inactive. Inactive account will be given notice via email to sign-in to their account within three (3) months, failure to do so will have their account automatically deactivated. Once your account has been deactivated, you will be informed by the system when you try to sign in again. To reactivate your account, you just simply sign in again at BigBenta using your registered username/email and password.
+
+The system will deactivate member accounts wherein the corresponding e-mail addresses assigned to the accounts reject or bounce BigBenta e-mails due to the following:
+
+e-mail account deactivated;
+e-mail account suspended;
+e-mail domain inaccessible; and
+e-mail requiring verification
+Once you have fixed the problem(s) with your e-mail, you can sign in again to re-activate your account.
+
+Inactive and deactivated account will placed your active advertisements under suspend mode. Only upon activating again your account will the advertisements be return to active state.
+
+Tips for Selling 2nd Hand Items Online
+BigBenta Philippines
+May, 2015
+
+Real, good quality photos
+Photos and images taken from the web do not represent the item you are selling and buyers know that as well as Providing real, good quality pictures brings credibility to the advertisement and the seller. The buyer will be able to gauge his/her interest in your product readily and would, therefore, not waste both your time and effort.
+
+More information on the condition of your item
+With so many choices out there for the Buyers to pursue, your item will be distinct if the Buyer feels assured of the item you are selling through the detailed information you provide. Information sets the expectation of the Buyer about your item and will be comfortable negotiating with you prior to seeing the item personally. This again saves time and effort to both parties, which is the purpose of posting your item in BigBenta.
+
+What is the reason for selling?
+Trust is the main reason why most people are reluctant to transact over the internet. By informing potential buyers the reason behind why your item is up for sale, it creates a level of trust to Buyers and puts more credibility to you as a Seller. Trust helps establish the foundation to start the negotiation.
+
+Price reasonably
+Buyers expect a reasonable price for your item as the internet saves you the usual overhead fixed cost (e.g. store lease, advertising, etc.) and the Buyers can review your item at his/her own convenience. Pricing the item too low will raise suspicions to Buyers that hidden issues might be present in your item. Pricing too high will just place your item at the very last of every Buyer’s list. Pricing your item reasonably will be placing your item at the short list of every Buyer.
+
+Meeting the buyer
+Despite all the convenience Internet may bring in the buying and selling of any items, a vast majority of the Buyers still has the “brick and mortar” mind set which simply means they need to see, touch and feel the item before they buy them. This becomes more evident on 2nd hand items. It is in here that location, and ease of setting the meeting comes very crucial towards closing the sale.
+
+System modifications and changes
+BigBenta Philippines
+May, 2015
+
+BigBenta Philippines will continuously introduce improvements and/or changes in the contents on this system, or even perhaps terminate this system, at any time with due notice (no less than 30 days) to members. BigBenta Philippines can also modify these rules and policies at any time, and such modifications shall be effective upon notice (no less than 30 days) and posting of the modified rules and policies. Accordingly, you as a member agree to review the policies periodically, and your continued access and/or use of this system shall be deemed your acceptance of the modified policies.
+
+BigBenta Philippines reserves any and all rights not expressly stated herein.
+
+Store
+BigBenta Store Membership Agreement
+BigBenta Philippines
+December 2015
+
+PLEASE READ THIS AGREEMENT CAREFULLY
+
+1. Acceptance of Terms
+
+1.1 WELCOME TO BIGBENTA'S STORE MEMBERSHIP. This BigBenta Store Membership Agreement (this Agreement) is between BigBenta Corporation (incorporated in Philippines with SEC Reg. No. CS201505708) (BigBenta) and any person/business entity (hereinafter referred to as “you” or “Member”), who/which applies to subscribe for or order a Basic, Professional and Enterprise membership service (“Store Membership”) and/or any related Value Added Services (collectively, the “Services”) offered by BigBenta through the web site identified by the uniform resource locator www.bigbenta.com the Site. BY SUBMITTING YOUR APPLICATION OR SERVICE ORDER OR MAKING ANY PAYMENT FOR ANY SERVICES WHETHER ONLINE VIA THE SITE OR OFFLINE OR VIA OUR AUTHORIZED SALES AGENT, YOU INDICATE YOUR CONFORMITY TO BE BOUND BY THIS AGREEMENT.
+
+1.2 This Agreement applies to all Services and governs all applications or service orders for the Services (each referred to as a “Service Order”). In case of any conflict between the terms of this Agreement and those of a Service Order, the terms of the Service Order shall prevail.
+
+1.3 Service Order is developed by either through BigBenta’s designated Sales Agents and Managers or directly through its Site or website.
+
+1.4 If a Service Order includes the Store Membership, this Agreement will take effect on the later of the day when: (i) you have paid the total service fees in full under the Service Order; and (ii) accepted the membership agreement as stipulated herein. 1.5 BigBenta’s Sales Agent and Manager are not allowed to accept any form of payment from BigBenta Store Customers. Payment instructions are either emailed or SMS directly to the Store Account applicant for compliance.
+
+1.6 If a Service Order includes Value Added Services only and does not include the Store Membership, you must concurrently be an existing Basic or Professional or Enterprise member. This Agreement will take effect on the day when you have paid the total service fees in full within the prescribed period set forth in the Service Order or otherwise acceptable to BigBenta.
+
+1.7 BigBenta may amend this Agreement at any time by posting the amended and restated Agreement on the Site. The amended and restated Agreement shall be effective immediately upon posting. After posting by BigBenta of the amended and restated Agreement, your continued use of the Services shall be deemed to be an absolute and unqualified acceptance of the amended terms. This Agreement may not otherwise be modified except in writing by an authorized officer of BigBenta.
+
+1.8 The Services are provided subject to the Terms of Use Agreement, Privacy Policy, Product Listing Policy and all other rules and policies of the Site, each published on the Site and as may be revised from time to time (collectively, the “BigBenta Apps or BB Apps”). You hereby agree to comply with such BigBenta Apps at all time.
+
+2. Authentication and Verification
+2.1 Registration for the Store Membership Service is subject to verification and authentication procedures to verify the registration information and such other information about you as deemed appropriate by BigBenta (the “A and V”). Authentication refers registration and location. Verification refers to confirmation by the A and V Agency that the contact person indicated in the Service Order is your authorized representative to represent you on the Site. You authorize BigBenta and its authorized third party security service provider (at BigBenta’s sole choice) (the “A and V Agency”) to conduct the A and V about you. You agree to provide all necessary information and render all reasonable assistance and cooperation that either BigBenta or the A and V Agency may require in order to complete the A and V.
+
+2.2 If you fail the A and V for the first time, upon your request and at your cost, BigBenta may conduct the A and V up to the second time only at the no additional charge for locations within Metro Manila. However, a PhP 2,000 fee will be charged for every succeeding A and V visits for businesses outside Metro Manila. In no event shall BigBenta be obliged to conduct any A and V after two (2) calendar months from the date of your Service Order. If you fail to successfully complete the A and V within the above 2 months period, your Service Order for the Services will be deemed to be cancelled and all payments forfeited.
+
+2.3 If you cancel the Service Order, BigBenta will refund the subscription fees in accordance with our established practices, provided, however that BigBenta shall have the right to deduct PhP 1,000 as an administrative charge. You shall provide to us correct bank account details and other information necessary for BigBenta to process and make the refund. In case you fail to provide the required information within one (1) month, you will be deemed to have waived any claim in respect of such refund money, and BigBenta shall be entitled to forfeit absolutely the entire service fees paid by you without any liability to you.
+
+2.4 Any changes to the information that has been verified under the A and V shall be subject to new A and V at Member's own expense. If the Member fails to make payment and the changed information is not verified, BigBenta may, in its sole discretion, suspend or revoke all Services with respect to such Member without any refund or other compensation to Member.
+
+2.5 Upon each renewal of the BigBenta Store Membership Service, the A and V shall be carried out by BigBenta in accordance with this clause 2. If you purchase the Membership for more than one year, you shall also undergo and pass the A and V annually prior to the expiry date of each annual placement period in accordance with this clause 2.
+
+2.6 You agree not to hold BigBenta and our affiliates liable for any errors or omissions made (whether or not negligent, intentional or otherwise) by an A and V Agency.
+
+2.7 BigBenta may, at its discretion and subject to authorization by the A and V Agency (if any), display a sign or mark on the Site or other materials as BigBenta considers appropriate to indicate that Member has passed the A and V. However, Member shall not make any use of such sign or mark for any purpose without prior written consent by BigBenta.
+
+3. Services
+3.1 The Store Membership has the following core features (which may be modified or suspended for scheduled or unscheduled maintenance purposes, from time to time at the sole discretion of BigBenta upon notification):
+
+a) About the Seller or Company Profile - allows Member to display and edit basic information about its business, such as year and place of establishment, estimated annual sales, number of employees, products and services offered, etc.;
+
+b) Product Showroom - allows Member to display and edit descriptions, specifications and images of its products;
+
+c) Trade Boost Posting - allows Member to post on the Site for public display offers to buy or sell other Member’s products and services;
+
+d) Online Experience Profile - display Member's number of years in the online business as verified by the A and V Agency under the A and V.
+
+3.2 The Value Added Services are offered only to Members whose service period for the Store Membership are still valid and have not expired.
+
+3.3 BigBenta reserves the right to change, upgrade, modify, limit or suspend the Services or any of its related functionalities or applications at any time temporarily or permanently without prior notice. BigBenta further reserves the right to introduce new features, functionalities or applications to the Services or to future versions of the Services. All new features, functionalities, applications, modifications, upgrades and alterations shall be governed by this Agreement, unless otherwise stated by BigBenta.
+
+3.4 The Services shall only be available to any individual and business entity: (i) duly incorporated or organized under the laws of the Republic of the Philippines; or (ii) whose contact details (e.g., telephone or business address) posted on the Site verify its location as within the territory of the Philippines that may be verified by the A and V Agency. BigBenta may suspend or terminate the Services of any entity violating this provision without notice.
+
+3.5 Member shall keep confidentiality and proper custody of its Member ID and Password of the account assigned to Member in connection with its use of the Services (the “Account”). A set of Member ID and Password is unique to a single Account. Member agrees that it shall be solely responsible for any use of its Account (including without limitation publishing of any information and materials, accepting any online rules and agreements, subscribing for or purchasing any service or product online) and any use of its Account will be deemed by BigBenta as having been fully authorized by such Member. Member shall not share with, assign to or permit a third party to use its Account, Member ID or Password (collectively, multiple use. Member acknowledges that multiple use of its Account with any third party may cause irreparable harm to BigBenta or other users of the Site, and agrees to indemnify BigBenta and its affiliates against any loss or damages suffered by BigBenta and its affiliates as a result of multiple use of its Account. lf Member fails to take necessary measures to maintain the security of the Account or to prevent the risks of unauthorized access, BigBenta shall have the right to suspend the provision of the Services or terminate this Agreement without any refund or other compensation with regard to Member.
+
+3.6 BigBenta shall have the right, but shall not be obliged, to monitor or examine any information and materials including any website link that Member publishes or submits to BigBenta for publishing on the Site (the “Member Materials”). Publishing of Member Materials shall by no means mean that BigBenta has endorsed or otherwise certify the contents of such Member Materials. Member shall be solely responsible for the contents of its Member Materials.
+
+3.7 If the activities of Member on the Site or any Member Materials (including material accessible through a link in the Member Materials), in BigBenta’s reasonable opinion, are in violation of any applicable laws and regulations or a third party’s legitimate rights (including without limitation intellectual property rights), the terms of this Agreement or the BigBenta Apps or may otherwise subject BigBenta or its affiliates to liability, BigBenta may, at its option, delete, remove or modify such Member Material or any part thereof and/or limit or suspend the provision of the Services or any part thereof (including without limitation limiting the number or types of product listings that the Member can publish on the Site for such duration as BigBenta may in its sole discretion consider appropriate).
+
+3.8 BigBenta reserves the right to cooperate fully with governmental authorities, private investigators and/or injured third parties in the investigation of any suspected criminal or civil wrongdoing. Further, BigBenta may disclose Member's identity and contact information, if requested by a government or law enforcement body, an injured third party, or as a result of a subpoena or other legal action. BigBenta shall not be liable for damages or results thereof, and Member agrees not to bring any action or claim against BigBenta for such disclosure. In connection with any of the foregoing, BigBenta may suspend or terminate Member’s Account as BigBenta deems appropriate at its sole discretion. BigBenta shall have the right to publish the records relating to handling of complaints against Member, breaches by Member or termination of this Agreement on the Site.
+
+3.9 Member hereby grants to BigBenta a non-exclusive, royalty-free, sub-licensable, worldwide, transferable license to (a) display, publish or transmit all or part of the Member Materials, or any adaptations thereof, (b) link, copy, store, adapt, translate or make other reasonable use of all or part of the Member Materials, or any adaptations thereof, necessary to provide the Services in any medium known now and in the future.
+
+4. Service Period
+4.1 Unless otherwise agreed by the Parties, the service period for the Store Membership shall be one (1) year from the activation date of the Account. Activation of the Account shall be notified to Member via email to such email address provided by Member upon registration for the Service.
+
+4.2 The service period for any Value Added Service shall be the agreed period specified in the relevant Service Order provided that if Member’s Store Membership expires or terminates, all of its Value Added Services under the same Account shall terminate simultaneously.
+
+4.3 This Agreement will expire on the day when all the service periods expire, unless earlier terminated according to the terms of this Agreement.
+5. Fees and Payment
+5.1 In consideration of BigBenta's agreement to process the application and to provide the Services, you agree to pay BigBenta the service fees. All service fees shall be payable in advance to BigBenta by wire transfer, credit card, over-the-counter, third-party payment system (including but not limited to PayPal) or such other method acceptable to BigBenta, in Philippine Peso or its equivalent in such other currency as permitted by BigBenta.
+
+5.2 All services fees are exclusive of any taxes, duties or other governmental levies or any financial charges. You agree to pay and be responsible for any such taxes, duties, levies or charges on the sale and use of the Services in addition to our service fees. In the event BigBenta is required by any applicable law to collect any taxes or duties, you agree to pay such taxes or duties to BigBenta.
+
+5.3 BigBenta reserves the right to modify its pricing structure, discounts and payment conditions from time to time at its sole discretion.
+
+6. Cancellation and Refund Policy
+6.1 Should a member deemed to cancel a Service Order within the subscription period, BigBenta will refund the service fee pro-rated to the unused months, provided, however that BigBenta shall have the right to deduct an additional PhP 1,000 as an administrative charge on top of the used months. Any used day over a month is considered a one month usage.
+
+6.2 Members seeking refunds shall provide to us correct bank account details and other information necessary for BigBenta to process and make the refund. In case a member fails to provide the required information within three (3) months from the refund filing date, member will be deemed to have waived any claim in respect of such refund money, and BigBenta shall be entitled to forfeit absolutely the entire service fees paid by the member without any liability to the member.
+
+7. Member Responsibilities
+7.1 Member agrees to provide all necessary information, materials and approval, and render all reasonable assistance and cooperation necessary for BigBenta’s provision of the Services. If Member’s failure to do so results in delay in the provision of any Service, BigBenta shall not be obliged to extend the relevant service period nor shall be liable for any loss or damages arising from such delay.
+
+7.2 Member represents and warrants to BigBenta that:
+
+a) it has the full power and authority to enter into this Agreement, to grant the license and authorization and to perform its obligations hereunder;
+
+b) it will carry on its activities on the Site in compliance with any applicable laws and regulations;
+
+c) it will not use the Services to defraud users of the Site or engage in other unlawful activities (including without limitation spamming, allowing another to use your business registration information to subscribe for a BigBenta service);
+
+d) it has the legitimate right and authorization to sell, distribute or export all products or services it posts on the Site or otherwise referred to in its Member Materials;
+
+e) all contents of its Member Materials are true, lawful and accurate, and are not false, misleading or deceptive;
+
+f) it will not impersonate any person or entity, or misrepresent itself or its affiliation with any person or entity;
+
+g) it will not post any product or service listing in breach of the Store Ads Posting Policy, and its Member Materials or any product or service referred to in its Member Materials do not infringe or otherwise abet or encourage the infringement or violation of any third party's copyright, patent, trademarks, trade secret or other proprietary right, rights of publicity and privacy or other legitimate rights;
+
+h) its Member Materials do not contain information that is defamatory, libelous, threatening or harassing, obscene or sexually explicit or harmful to minors;
+
+i) its Member Materials do not contain information that is discriminatory or promotes discrimination based on race, sex, religion, nationality, disability, sexual orientation or age.
+
+7.3 Member agrees and undertakes that it will not:
+
+a) copy, reproduce, exploit or expropriate BigBenta's various proprietary directories, databases and listings;
+
+b) use or distribute any computer viruses or other destructive devices and codes that may harm, interfere with, intercept or expropriate any software or hardware system, data or personal information;
+
+c) gain or attempt to gain authorized access to the computer systems or networks used by BigBenta and/or any user of the Site or engage in any other activities that may harm the integrity of such computer systems or networks;
+
+d) take any action which may undermine the integrity of BigBenta's feedback system, such as leaving positive feedback for himself using secondary Member IDs or through third parties or by leaving unsubstantiated negative feedback for another Member;
+
+e) perform such other acts prejudicial to the interests of BigBenta.
+
+7.4 Member shall conduct all activities on the Site in accordance with all applicable laws and regulations and commonly accepted commercial practices. Member shall also conduct its business affairs with integrity and in an ethical manner.
+
+7.5 Member acknowledges and agrees that BigBenta shall not be responsible, and shall have no liability to it or anyone else for any content of the Member Materials or materials posted by third parties.
+
+7.6 Member agrees to indemnify BigBenta and its affiliates and their employees, agents and representatives and to hold them harmless, from any and all losses, damages, actions, claims and liabilities (including legal costs on a full indemnity basis) which may arise, directly or indirectly, from its Member Materials or use of the Services or from Member's breach of this Agreement or the BigBenta Apps, (including claims arising from Member’s business name) and from claims of third parties. BigBenta reserves the right, at its own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by Member, in which event Member shall cooperate with BigBenta in asserting any available defenses.
+
+8. Limitation of Liability
+8.1 BigBenta represents and warrants that it will provide the Services with reasonable care and skill. EXCEPT AS EXPRESSLY PROVIDED IN THIS AGREEMENT AND TO THE FULL EXTENT PERMITTED BY LAW THE SERVICES ARE PROVIDED ON AN AS IS  AND AS AVAILABLE BASIS, AND BIGBENTA HEREBY EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF CONDITION, QUALITY, DURABILITY, PERFORMANCE, ACCURACY, RELIABILITY, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR IF SUCH POSSIBILITY WAS REASONABLY FORESEEABLE. ALL SUCH WARRANTIES, REPRESENTATIONS, CONDITIONS, UNDERTAKINGS AND TERMS ARE HEREBY EXCLUDED. IF BIGBENTA BREACHES THE WARRARNTY HEREUNDER, BIGBENTA SHALL RE-PERFORM THE AFFECTED PART OF THE SERVICES. TO THE FULL EXTENT PERMITTED BY LAW, THE REMEDY UNDER THIS CLAUSE SHALL BE THE MEMBER’S SOLE AND EXCLUSIVE REMEDY FOR BREACH OF BIGBENTA’S WARRANTIES UNDER THIS AGREEMENT.
+
+8.2 TO THE FULL EXTENT PERMITTED BY LAW, BIGBENTA SHALL NOT BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL, INCIDENTIAL, SPECIAL OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES FOR LOSS OF PROFITS OR REVENUES, BUSINESS INTERRUPTION, LOSS OF BUSINESS OPPORTUNITIES OR LOSS OF DATA, WHETHER IN CONTRACT, NEGLIGENCE, TORT OR OTHERWSIE, ARISING FROM THE USE OR INABILITY TO USE OF THE SERVICES.
+
+8.3 Member agrees not to hold BigBenta responsible for third parties’ content, actions or inactions. If Member uses third parties’ services, software or products in connection with the Services, Member further agrees not to hold BigBenta responsible for such third parties’ services, software or products.
+
+8.4 Any material downloaded or otherwise obtained through the use of the Services is done at Member's sole discretion and risk and Member is solely responsible for any damage to its computer system or loss of data that may result from the download of any such material. No advice or information, whether oral or written, obtained by Member from BigBenta or through or from the Services shall create any warranty not expressly stated in this Agreement.
+
+8.5 Notwithstanding any of the foregoing provisions, the aggregate liability of BigBenta and its affiliates and their employees, agents and representatives or anyone acting on their behalf, with respect to Member for all claims arising from the use of the Services or the Site shall not exceed the amount of the services fees that Member pays to BigBenta during the current service period for the Store Membership. The preceding sentence shall not preclude the requirement by Member to prove actual damages. All claims arising from the use of the Services must be filed only in the courts of Parañaque City to the exclusion of other courts within one (1) year from the date the cause of action arose.
+
+9. Termination
+9.1 If any of the following circumstances occurs, BigBenta shall have the right to terminate the Agreement immediately upon written notice to Member and to forfeit the services fees for any unused Services without liability:
+
+1) BigBenta has reasonable grounds to believe that Member uses the Services for any fraudulent or other unlawful purpose;
+
+2) Upon complaint or claim from any third party, BigBenta has reasonable grounds to believe that Member has wilfully or materially breached its contract with the third party complainant, including without limitation where Member has failed to deliver the products ordered by the complainant after receipt of the purchase price, or where Member has failed to make payment to the complainant after receipt of the products delivered by the complainant, or where Member has delivered the products that fail to materially meet the terms and descriptions outlined in Member Materials;
+
+3) BigBenta has reasonable grounds to believe that Member is involved in the production or sale of any inferior goods or any goods which infringe any intellectual property rights or other legitimate rights of any third party;
+
+4) Member assigns or transfers part or all of its rights and obligations under this Agreement to a third party (including multiple use of its Account) without BigBenta’s prior written consent;
+
+5) Member sells any business information related to buyers and/or their buy leads/enquiries which are obtained by Member as a result of use of the Services without BigBenta’s prior written consent;
+
+6) Member is involved in any scheme or activities to undermine the integrity or normal operation of the computer systems or networks of the Site (including gaining unauthorized access to the systems of the Site, stealing, modifying or deleting the information of other members of the Site without authorization);
+
+7) Member is in breach of any of its representations, warranties and undertakings in clause 7;
+
+8) Member has failed to rectify any breach of this Agreement other than those under paragraphs (1)-(7) hereof within 10 working days of being notified by BigBenta of such breach;
+
+9) Member has committed breaches other than those under paragraphs (1)-(7) hereof for 3 or more times;
+
+10) Member ceases to conduct its operations, is insolvent or wound up, or becomes the subject of any voluntary or involuntary proceeding relating to insolvency, receivership, liquidation or composition for the benefit of creditors or similar proceeding;
+
+9.2 If the Agreement is terminated under clause 9.1 and other provisions of this Agreement, BigBenta shall have the right to refuse any and all current or future use by Member of the Services or any other services that may be provided by BigBenta.
+
+9.3 In the event that BigBenta does not receive full payment of subscription fees within ten (10) days of automatic renewal of subscription for the Service, such Member's subscription shall be terminated immediately without further notification from BigBenta. Access to the Store Membership shall be denied upon such termination.
+
+10. Force Majeure
+10.1 Under no circumstances shall BigBenta be held liable for any delay or failure or disruption of the Services resulting directly or indirectly from acts of nature, forces or causes beyond its control, including without limitation, acts of God, Internet failures, computer, telecommunications or any other equipment failures, electrical power failures, strikes, labor disputes, riots, insurrections, civil disturbances, shortages of labor or materials, terrorism, war, governmental actions, orders of domestic or foreign courts or tribunals.
+
+11. General Provisions
+11.1 This Agreement constitutes the entire agreement between Member and BigBenta with respect to and governs the use of the Services, superseding any prior written or oral agreements in relation to the same subject matter herein.
+
+11.2 This Agreement shall be governed by the laws of the Republic of the Philippines without regard to its conflict of law provisions. The Parties to this Agreement hereby submit to the exclusive jurisdiction of the courts of Paranaque City to the exclusion of other courts.
+
+11.3 If any provision of this Agreement is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall be enforced.
+
+11.4 Headings are for reference purposes only and in no way define, limit, construe or describe the scope or extent of such section.
+
+11.5 Any failure by BigBenta to exercise any of its rights under this Agreement shall not constitute a waiver of such right or a waiver with respect to subsequent or similar breach. A waiver shall be effective only if made in writing.
+
+11.6 BigBenta shall have the right to assign this Agreement (including all of its rights, titles, benefits, interests, and obligations and duties in this Agreement) to any person or entity (including any affiliates of BigBenta). Member may not assign, in whole or part, this Agreement to any person or entity.
+
+11.7 If there is any conflict between the English version and another language version of this Agreement, the English version shall prevail. Any non-English version of this Agreement is provided for reference purposes only.
+
+ PRODUCT LISTING POLICY
+1. General Prohibitions
+
+2. Artifacts
+
+3. Currency and Stamps
+
+4. Drugs and Associated Paraphernalia
+
+5. Ethnically or Racially Offensive Material
+
+6. Event Ticket Resale Policy
+
+7. Faces, Names and Signatures
+
+8. Financial Services
+
+9. Firearms, Ammunition, Weapons, Explosives
+
+10. Gold, Silver and Other Precious Metals
+
+11. Government-Issued IDs, Licenses and Uniforms
+
+12. Hazardous Materials
+
+13. Human Parts and Remains
+
+14. Invoices
+
+15. Job Postings
+
+16. Mailing Lists and Personal Information
+
+17. Medical and Healthcare Service
+
+18. Non-business Information
+
+19. Non-transferable Items
+
+20. Police-Related Items
+
+21. Pornographic Materials and Adult Products
+
+22. Posting an Advertisement for the Sole Purpose of Collecting User Information or Raising Money
+
+23. Prescription Drugs and Devices
+
+24. Real Estate
+
+25. Refurbished Products
+
+26. Replica and Counterfeit Items
+
+27. Circumvention Devices and Hacking Equipment
+
+28. Software
+
+29. Spy Equipment
+
+30. Stocks and Other Securities
+
+31. Stolen Property
+
+32. Textile Quota
+
+33. Transit Related Items
+
+34. Unauthorized Copies of Intellectual Property
+
+35. Used Clothing and Cosmetics
+
+36. Wildlife and Animal Products
+
+37. Sanctioned and Prohibited Items
+
+1. GENERAL PROHIBITIONS:
+
+1.1 You may not post or sell any item that is restricted or prohibited by a federal, state or local law in any country or jurisdiction. Please be aware that the www.BigBenta.com website ,Site, functions as a global marketplace, thus, the selling or posting of items may be prohibited because of laws outside of the jurisdiction where you reside. Below, we have listed some categories of prohibited or restricted items. However, this list is not exhaustive; you, as the seller, are responsible for ensuring that you are not posting an item that is prohibited by law in any jurisdiction.
+
+1.2 BigBenta has chosen to also prohibit the posting of other categories of items which may not be restricted or prohibited by law but are nonetheless controversial including:
+
+(a) Items that encourage illegal activities;
+
+(b) Items that are racially, religiously or ethnically derogatory, or that promote hatred, violence, racial or religious intolerance;
+
+(c) Giveaways, lotteries, raffles, or contests;
+
+(d) Stocks, bonds, investment interests, and other securities;
+
+(e) Items that do not offer a product or service for sale, such as advertisements solely for the purpose of collecting user information.
+
+1.3 BigBenta, in its sole and exclusive discretion, reserves the right to impose additional restrictions and prohibitions.
+
+2. ARTIFACTS
+2.1 Artifacts, cultural relics, historical grave markers, and related items are protected under the laws of the Philippines, Indonesia, the United States, and other jurisdictions and may not be posted or sold through the Site.
+
+2.2 The trade of cultural relics (including personal collection relics), gold, silver, other precious metals, rare animals and their products from the Philippines to foreign parties is strictly prohibited under Philippine laws and is accordingly prohibited on the Site.
+
+3. CURRENCY AND STAMPS
+3.1 BigBenta strictly forbids the sale and purchase of currency, bank notes, bonds, money orders, currency in digital or any intangible form (e.g. crypto-currency) and other securities, as well as the equipment used to produce such items.
+
+3.2 Counterfeits of the identified articles in 3.1, legal tenders and stamps are strictly prohibited.
+
+3.3 Reproductions or replicas of coins as collectible items must be clearly marked with the word COPY, REPRODUCTION or REPLICA and comply with all relevant local laws.
+
+4. DRUGS and ASSOCIATED PARAPHERNALIA
+4.1 The listing or sale of narcotics, steroids, poppy seeds, poppy seed products or other controlled substances (including all drugs listed in the Philippines Dangerous Drugs Act) is strictly forbidden on the Site.
+
+4.2 The listing or sale of drug paraphernalia, including all items that are primarily intended or designed for use in manufacturing, concealing, or using a controlled substance is strictly forbidden on the Site. Such items include, but are not limited to those items used for the ingestion of illicit substances including pipes such as water pipes, carburetor pipes, chamber pipes, ice pipes, bongs, etc.
+
+5. ETHNICALLY OR RACIALLY OFFENSIVE MATERIAL
+5.1 Postings that are ethnically or racially offensive are prohibited on the Site. Sellers and purchasers must ensure that any wording used portrays appropriate sensitivity to those who might read it in their postings, and when they are offering or purchasing potentially offensive items or services.
+
+5.2 BigBenta generally prohibits such materials promoting Nazism, Klu Klux Klan, Terrorism etc.
+
+6. EVENT TICKET RESALE POLICY
+6.1 BigBenta allows the listing of tickets to performance, sporting and entertainment events to the extent permitted by law. However, as a ticket seller, you are responsible for ensuring that your particular transaction does not violate any applicable law or the terms on the ticket itself.
+
+7. FACES, NAMES AND SIGNATURES
+7.1 Items containing the likeness, image, name, or signature of another person are prohibited, unless the products were made or authorized by the person whose likeness, image, name or signature has been used.
+
+8. FINANCIAL SERVICES
+8.1 BigBenta prohibits listings that offer financial services, including money transfers, issuing bank guarantees and letters of credit, loans, fundraising and funding for personal investment purposes, etc., unless the member is duly authorized by the relevant Government agencies regulating these services.
+
+9. FIREARMS, AMMUNITION, WEAPONS
+9.1 The posting of, offering for sale, or offering for purchase of any firearms, ammunitions, military ordnance, weapons (including explosive weapons), and/or any related parts or accessories without the required permits and licenses is strictly prohibited. Such activity can result in your account being delisted.
+
+9.2 BigBenta may permit the posting, offering for sale, or offering of purchase of air guns, BB guns, paintball guns, or any other weapons that may discharge a projectile that is not fatal or may cause untoward injuries to humans upon the express approval of BigBenta.
+
+9.3 Any servicing, instruction, processing, or aid of producing any biological, chemical, or nuclear weapons, or any other Weapons of Mass Destruction (WMD) or its known associated agents is strictly prohibited by international law and is accordingly prohibited on the Site. Any violation of this policy will result in the notification of government authorities by BigBenta and your account being delisted.
+
+9.4 Knives and other cutting instruments will in most cases be permitted to be listed. Switchblade knives, gravity knifes, knuckledusters (bladed or not), bladed hand-held devices, and disguised knives are not permitted to be listed. BigBenta maintains discretion over what items are appropriate and may cause removal of a listing that it deems as a weapon.
+
+10. GOLD, SILVER AND OTHER PRECIOUS METALS
+BigBenta does not permit listings that offer the sale or buying of gold, silver and other precious metals (not including jewelry).
+
+11. GOVERNMENT-ISSUED IDS, LICENSES AND UNIFORMS
+11.1 The following items may not be listed on the Site:
+
+(a) Items that claim to be, or appear similar to, official government-issued identification documents or licenses, such as birth certificates, driver’s licenses, visas or passports. Furthermore, completed applications for such documents containing personal information may not be listed.
+
+(b) Fake identification cards or any items that are designed for the manufacture of such cards.
+
+(c) Articles of clothing or identification that claim to be, or appear similar to, official government uniforms.
+
+(d) Military decorations, medals and awards, in addition to items with substantially similar designs.
+
+12. HAZARDOUS AND DANGEROUS MATERIALS
+12.1 The posting, offering for sale, or offering for purchase of hazardous or dangerous materials (such as the categories of dangerous goods as defined under the International Maritime Dangerous Goods Code) is forbidden on the Site.
+
+12.2 The posting of any products containing harmful substances (e.g. toys containing lead paint) is forbidden on the Site.
+
+12.3 Automotive airbags are expressly forbidden on the site due to containing explosive materials.
+
+12.4 Asbestos materials and/or products containing asbestos are prohibited.
+
+13. HUMAN PARTS AND REMAINS
+
+13.1 BigBenta prohibits the listing of any humans, the human body, or any human body part. Examples of such prohibited items include, but are not limited to: organs, bone, blood, sperm, and eggs.
+
+13.2 Skulls and skeletons that are used for medical or educational purposes may be listed on the Site.
+
+13.3 Items made of human hair, such as wigs for commercial uses, are permitted.
+
+14. INVOICES
+
+14.1 The listing or sale of any form of invoices or receipts (including blank, pre-filled, or value added invoices or receipts), is strictly prohibited on the Site.
+
+15. JOB POSTINGS
+15.1 Job postings from which a factory/company/institute may directly recruit employees are prohibited on the Site.
+
+16. MAILING LISTS AND PERSONAL INFORMATION
+16.1 The posting or sale of bulk email or mailing lists that contain personally identifiable information including names, addresses, phone numbers, fax numbers and email addresses, is strictly prohibited. Also prohibited are software or other tools which are designed or used to send unsolicited commercial email (i.e. spam.
+
+17. UNLICENSED MEDICAL AND HEALTHCARE SERVICES
+17.1 BigBenta prohibits listings that offer non-licensed medical or healthcare services, including services for medical treatment, rehabilitation, vaccination, healthcheck, psychological counseling, dietetics, plastic surgery, massage, etc. Relevant regulatory and association licenses and permits needs to be secured (DOH, PMA, etc.)
+
+18. NON-BUSINESS INFORMATION
+18.1 BigBenta is an online business to business information platform; personal and non-business information is prohibited.
+
+19. NON-TRANSFERABLE ITEMS
+19.1 Non-transferable items may not be posted or sold through the Site. Many items including lottery tickets, airline tickets and some event tickets may not be resold or transferred.
+
+20. POLICE-RELATED ITEMS
+20.1 The posting of law enforcement badges or official law enforcement equipment from any public authority, including badges issued by the government of any country, is strictly prohibited.
+
+20.2 There are some limited police items that may be listed on our site, provided they observe any noted guidelines:
+
+(a) Authorized general souvenir items, such as hats, mugs, pins, pens, buttons, cuff links, T-shirts, money clips that do not resemble badges, and paperweights that do not contain badges.
+
+(b) Badges that are clearly not genuine or official (e.g. toy badges).
+
+(c) Historical badges that do not resemble modern law enforcement badges, provided that the item description clearly states that the badge is a historical piece at least 75 years old or issued by an organization which no longer exists.
+
+20.3 Police uniforms may be posted provided that they are obsolete and in no way resemble current issue police uniforms. This fact must be clearly stated within the posting description.
+
+21. PORNOGRAPHIC MATERIALS AND ADULT PRODUCTS
+21.1 The posting or sale of pornographic materials is strictly prohibited, as it violates laws in many countries. While pornography is difficult to define and standards vary from nation to nation, BigBenta will generally follow guidelines accepted in Philippines.
+
+21.2 BigBenta strictly prohibits items depicting exploitation of minors, bestiality, rape sex, incest or sex with graphic violence or degradation.
+
+21.3 In determining whether listings or information should be removed from the site, we consider the overall content of the posting, including photos, pictorials, and text.
+
+21.4 BigBenta does not permit the sale of S and M. Novelty sexually explicit items, including various types of toys, collectibles, or food items in the shape of genitalia and primarily intended for adult buyers are permitted in the appropriate category.
+
+22. POSTING AN ADVERTISEMENT FOR THE SOLE PURPOSE OF COLLECTING USER INFORMATION OR RAISING MONEY
+
+22.1 BigBenta is the ideal site for business to consumer commercial transactions. Honesty and high ethical standards is what we represent. Postings on this site should clearly represent the item being sold. If your objective is otherwise, we ask that you seek out other websites to carry on the business activity you seek to perform.
+
+23. PRESCRIPTION DRUGS AND DEVICES
+23.1 BigBenta does not permit the posting of prescription drugs. If you are uncertain as to whether your item is permitted, please contact BigBenta prior to posting.
+
+23.2 BigBenta does not permit the posting of psychotropic drugs and narcotics.
+
+23.3 Member may post over-the-counter drugs if you have obtained necessary approval, license or permit to manufacture or sell drugs. If you are uncertain as to whether you may post over-the-counter drugs, please contact BigBenta prior to posting.
+
+23.4 BigBenta also does not permit the posting of unauthorized medical devices.
+
+24. REAL ESTATE
+24.1 A real estate posting allows buyers to contact the seller to get more information and express interest about the property listed. Before you post a listing relating to sale or purchase of real estate, you must ensure that you have complied with all applicable laws and regulations
+
+25. REPLICA AND COUNTERFEIT ITEMS
+25.1 Listing of counterfeits, non-licensed replicas, or unauthorized items, such as counterfeit designer garment, watches, handbags, sunglasses, or other accessories, is strictly prohibited on the Site.
+
+25.2 If the products sold bear the name or logo of a company, but did not originate from or were not endorsed by that company, such products are prohibited from the Site.
+
+25.3 Postings of luxury brand products are permitted if a certificate of authorization has been issued by the luxury brand owner.
+
+25.4 Postings offering to sell or purchase replicas, counterfeits or other unauthorized items shall be subject to removal by BigBenta. Repeated postings of counterfeit or unauthorized items shall result in the immediate suspension of your membership.
+
+26. CIRCUMVENTION DEVICES AND HACKING EQUIPMENT
+26.1 Descramblers or other items that can be used to gain unauthorized access to television programming (such as satellite and cable TV), internet access, telephone, data or other protected, restricted, or premium services are prohibited. Stating the item is for educational or test purposes will not legitimize a product that is otherwise inappropriate. Some examples of items which are not permitted include smart cards and card programmers, descramblers, DSS emulators and hacking software.
+
+26.2 Similarly, information on how to descramble or gain access to cable or satellite television programming or other services without authorization or payment is prohibited. BigBenta's policy is to prohibit any encouragement of this type of activity.
+
+26.3 Devices designed to intentionally block, jam or interfere with authorized radio communications, such as cellular and personal communication services, police radar, global positioning systems (GPS) and wireless networking services (Wi-Fi) are prohibited.
+
+27. SOFTWARE
+27.1 Academic Software
+
+(a) Academic software is software sold at discounted prices to students, teachers, and employees of accredited learning institutions.
+
+(b) On the Site, please do not list any academic software unless you are so authorized. Postings violating BigBenta's academic software policy may be deleted prior to publication.
+
+(c) For postings of academic software on behalf of an authorized educational reseller or an educational institution, such licensure must be stated conspicuously in the postings, including selling leads, Products and companies. A certificate of authorization issued by the authorized educational reseller (or the educational institution) also must be provided to BigBenta.
+
+27.2 OEM Software
+
+(a) Do not list OEM or bundled copies of software on the Site unless you are selling it with computer hardware. Original Equipment Manufacturer (OEM), or bundled software, is software that is obtained as part of the purchase of a new computer. OEM software licenses usually prohibit the purchaser from reselling the software without the computer or, in some cases, without any computer hardware.
+
+28. SPY EQUIPMENT
+28.1 The listing or sale of spy equipment is not permitted on the Site.
+
+28.2 The listing of devices used for interception of wire, oral and electronic communications is prohibited.
+
+28.3 Hidden photographic devices are permitted, unless used to facilitate the surreptitious viewing or recording of individuals for sexual purposes.
+
+29. STOCKS AND OTHER SECURITIES
+29.1 BigBenta does not permit the listing or sale of stocks, bonds, credit, investment interests, or other securities.
+
+30. STOLEN PROPERTY
+30.1 The posting or sale of stolen property is strictly forbidden on the Site, and violates international law. Stolen property includes items taken from private individuals, as well as property taken without authorization from companies or governments.
+
+30.2 BigBenta supports and cooperates with law enforcement efforts involving the recovery of stolen property and the prosecution of responsible individuals. If you are concerned that the images and/or text in your item description have been used by another Site user without your authorization, or that your intellectual property rights have been violated by such user, please contact our service team specified in our website www.bigbenta.com
+
+31. TEXTILE QUOTA
+31.1 The offering for sale or purchase of textile quota is prohibited on the Site
+
+32. TRANSIT RELATED ITEMS
+32.1 The following items related to the commercial airline and public transportation industries may not be listed on the Site:
+
+(a) Any article of clothing or identification related to transportation industries, including but not limited to, commercial airline pilot's uniforms, flight attendant's uniforms, airport service personnel uniforms, uniforms related to railway industries, and uniforms of security personnel of public transport industries. Vintage clothing related to commercial airlines or other public transport may be listed on the Site provided that the item description clearly states that the item is at least 10 years old, is no longer in use by the airline or other public transport authority and does not resemble any current uniform.
+
+(b) Manuals or other materials related to mass commercial public transportation, including safety manuals published by commercial airlines or entities operating subways, trains or buses. Such items may only be listed if the description clearly states that the material is obsolete and no longer in use by the airline or other transit authority.
+
+(c) Any official, internal, or non-public documents.
+
+33. UNAUTHORIZED COPIES OF INTELLECTUAL PROPERTY
+
+33.1 The listing or sale of unauthorized (pirated, duplicated, backup, bootleg, etc.) copies of software programs, video games, music albums, movies, television programs, photographs or other protected works is forbidden on the Site.
+
+34. USED CLOTHING AND COSMETICS
+34.1 Used undergarments may not be listed or sold on the Site. Other used clothing may be listed, so long as the clothing has been thoroughly cleaned. Postings that contain inappropriate or extraneous descriptions will be removed.
+
+34.2 The listing or sale of used cosmetics is prohibited on the Site.
+
+35. WILDLIFE AND ANIMAL PRODUCTS
+35.1 The listing or sale of any animal (including any animal parts which may include pelts, skins, internal organs, teeth, claws, shells, bones, tusks, ivory and other parts) protected by the Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) or any other local law or regulation is strictly forbidden on the Site.
+
+35.2 The listing or sale of products made with any part of and/or containing any ingredient derived from sharks or marine mammals is prohibited on the Site.
+
+35.3 The listing or sale of products made from cats or dogs, including pelts, skins, fur, meat, is prohibited on the Site.
+
+35.4 The listing or sale of poultry, livestock and pets for commercial purposes is permitted on the Site.
+
+36. SANCTIONED AND PROHBITED ITEMS
+36.1 Products prohibited by laws, regulations, sanctions and trade restrictions in any relevant country or jurisdiction worldwide are strictly forbidden on the Site.
+
+NOTICE: This list should not be considered exhaustive in nature and shall be updated on a continuous basis. If you are unsure about the product you wish to list with the Site in regard to its appropriateness or legality, please contact our customer services department at www.bigbenta.com
+
+Services
+BigBenta Philippines
+May 15, 2016
+
+This Agreement and all other documents or policies referenced here (collectively, the Terms) set forth the legal contract between each end member (Service Provider or Service Provider Client or Member or you or your) and BigBenta Service with respect to access to and use of BigBenta Service Site and Services.
+
+Welcome to BigBenta Service!
+
+By continuing to browse and use this website in any manner, including, but not limited to, visiting or browsing the Site and/or contributing content or other materials, you represent that (1) you have read the terms, conditions and the privacy policy, (2) you have understood them, (3) you are agreeing to comply with and be bound by them, (3) you are at least eighteen (18) years of age or are able to form legally binding contracts and (4) you agree to comply with all laws and regulations of the Philippines and those other laws and regulations which govern the relationship of the Site, Application, booking, tools, and services (together, the Application with the Member.
+
+ACCEPTANCE OF TERMS
+Every time you access the Site, you are agreeing to follow the Terms and Conditions of the website including any and all amendments that may be effected from time to time with or without prior notice. We may update the Agreement at any time. By continuing to use the Application, you consent to any updates to this Agreement. This version of the Agreement supersedes all earlier versions, and will comprise the entire Agreement between the Member and the Application. If you do not agree to any provision of this Agreement, you should not use the Application. All future Site policies or rules and regulations are incorporated herein.
+
+APPLICATION
+Our Application enables Service Providers to offer their services or to avail of the said services. Our Application allows the Service Providers who provide specific services to be visible and/or to connect with BigBenta Service Members who wish to avail of their service all over the Philippines through the creation of bookings within the Site (“Booking”). The Application also provides a variety of other resources in order to facilitate the organization of groups for events, workshops, conferences, and meet ups and other meetings of a similar nature (collectively “Events”).
+
+You agree to comply with all applicable domestic Philippine and international laws, statutes, ordinances and regulations regarding your use of our Application, including without limitation, your participation in or involvement with any Bookings and/or Events and your submission of acceptable Public Information in connection with your use of the Site. Further, the Member also agrees to comply with all applicable laws, statutes, ordinances and regulations regarding the transmission of technical data exported in connection with your use.
+
+MEMBERSHIP
+Our Application is available to all individuals who are at least 18 years of age. Our Application is not available to any temporarily or indefinitely suspended Members. By registering to use our Application, you represent and warrant that you are at least 18 years of age. Additional eligibility requirements for a particular Event may be set by the organizer of the said Event.
+
+When you complete our registration process you will create a password that will enable you to access our Application and create or access Bookings or Events and connect with other Members. You agree to maintain the confidentiality of your password, and are fully responsible for all liability and damages resulting from your failure to maintain that confidentiality and all activities that occur through the use of your password. You agree to immediately notify us of any unauthorized use of your password or any other breach of security. You agree that BigBenta Service cannot and will not be liable for any loss or damage arising from your failure to comply with this Section.
+
+We reserve the right to terminate any member name and password, which we reasonably determine may have been used by an unauthorized third party. Members use the Services at their own risk. You agree that we moderator access and use at our sole discretion by blocking, filtering, deletion, delay, omission, verification, and/or access/account termination. Nothing we say or do waives our right to moderate. BigBenta Service has the right and sole discretion to suspend or terminate your use of our Application and refuse any and all current or future use of all or any portion of our Application. We may terminate your access to the Site, account, or profile without cause or notice. If due to anything we believe inappropriate for the Site's purpose, or due to violation of the Terms and Conditions, it may result in the forfeiture and destruction of all information associated with you.
+
+By using the Site, you agree and acknowledge that it is hosted in the Philippines. If you are attempting to access the Site from a physical location within any other region with laws or regulations governing Personal Information collection, use, and disclosure that differ from the laws of Philippines, please be advised that through your continued use of this Site, these Terms, and the Privacy Policy, you are transferring your personal information to the Philippines and you consent to such transfer, the application of the laws of the Philippines with respect to any dispute arising from or related to your use of the Site, and the exclusive jurisdiction of the courts of Paranaque City, NCR, Philippines only, to the exclusion of all other Philippine courts. BigBenta Service makes no representations that the Website is appropriate or available for use in other locations. Those who access or use the Site from other jurisdictions do so at their own volition and are responsible for compliance with local Philippine laws.
+
+EVENTS
+Definition. This means events, workshops, conferences, meet-ups, and other meetings of a similar nature (collectively “Events”)
+
+Registration. All participants must pay the registration fee prior to arrival at the conference venue. Participants are also advised to have a copy of their payment slip when going to the registration desk on the day of the Event to show proof of their payment.
+
+Policy Registration. Cancellations are only applicable during reschedules and only to be initiated by BigBenta Service. Cancellations made after the time as specified, as well as 'no shows', are liable for the full registration fee. Participants must ensure that they receive an official acknowledgement of cancellation from BigBenta Service. Only through this official correspondence would confirm that their request has been received and processed.
+
+Liability. BigBenta Service reserves the right to amend any part of the program if necessary at any time. BigBenta Service will not accept liability for damages of any nature sustained by delegates or accompanying persons, or loss of or damage to their personal property during any Events. In the event of industrial disruption or other unforeseen circumstances, BigBenta Service accepts no responsibility for loss of any kind incurred by delegates, customers, attendees, participants, or any other parties involved. Delegates, customers, attendees, participants, or any other parties involved should make their own arrangements with respect to personal, business, or health insurance, along with travel insurance.
+
+Personal Insurance. BigBenta Service cannot be responsible for healthcare, dental and ambulance services during its Events. BigBenta Service strongly recommends that participants take out comprehensive medical and travel insurance, which should cover the possibility of flight cancellation due to strikes and other causes. Therefore, BigBenta Service accepts no responsibility of any nature whatsoever for personal injury, death, loss or damage to property or participants of the Events however caused or arising.
+
+Privacy Legislation. In registering for BigBenta Service Events, relevant details will be incorporated into a participant list for the benefit of delegates, attendees, participants, or any other parties involved. Normally this information would be: name, surname, and email address. These details may also be available to parties directly related to the Events including the relevant venue and accommodation providers. BigBenta Service may use these details to inform current participants of Events, updates, or future conferences via email or through any medium. Participants have the sole responsibility for advising BigBenta Service if they do not wish to have their email addresses included in the Events participant list or BigBenta Service’s distribution list for future Events.
+
+Consent to Disclosure. You acknowledge and agree that the Site may disclose your Information if required to do so by law or in the good faith belief that such disclosure is reasonably necessary to: (a) comply with a current judicial proceeding, a court order or legal process served on us or our website, (b) enforce this Agreement, (c) respond to claims that Your Information violates the rights of third parties; (d) protect the rights, property or personal safety of the Site, its employees, members and the public; or (e) enable the transfer or sale to another entity of all or substantially all of our stock or assets in the line of business to which this Agreement relates, or upon any other corporate reorganization, subject to the promises made in these Terms. We may also disclose any information about you to law enforcement or other government officials as we, in our sole discretion, believe necessary or appropriate, in connection with an investigation of fraud, intellectual property infringements, or other activity that is illegal or that we believe may expose us or you to legal liability.
+
+BOOKINGS
+
+Bookings are defined as any service engagement between a Client/s and a Service Provider/s. Both Members enter into a formal contract wherein the Client would create a Booking and the Service Provider accepts the booking, which constitutes binding acceptance by both parties/Members. Bookings are based on deliverables/a scope that is set by the Client/s and agreed upon by Service Provider/s. The newly created Booking should be funded by the Client based on a mutually agreed upon service fee between the Members. The Site accepts only the booking fee related to the agreed service transaction under the Application. Bookings may vary from a one-time deal, recurring, and multiple Client and Service Providers under one booking.
+
+All payments of Booking/s under the Application shall automatically generate an official receipt wherein appropriate tax charges will be reflected. Any tax due to the payment received (direct payment) by service provider for the service rendered to the client will be for the service provider’s accountability.
+
+If a dispute arises out of or relates to a created Booking(hereinafter referred to as the “Agreement”) between the Service Provider and the Client, or the breach, termination, validity or subject matter thereof, or as to any related claim in restitution or at law, in equity or pursuant to any Philippine law or internationally accepted principles of law, the parties to the agreement and the dispute expressly agree to endeavor in good faith to settle the dispute by voluntary mediation under the Republic Act No. 9285 or the Alternative Dispute Resolution Act of 2004 (the ADR Law), which, inter alia, prescribes rules governing voluntary mediation, whether ad hoc or institutional, other than court-annexed with one of the directors of BigBenta as a non-interested mediator, as agreed upon by the parties at the start of the Agreement. If after thirty (30) days the matter is not settled, the matter will be raised to the court of Paranaque City, NCR, Philippines to the exclusion of all other venues for Court Annexed Mediation (CAM) under AM No. 01-10-5-SC-PHILJA. For reference of the parties, CAM would first be handled by the Philippine Mediation Center (PMC) unit of the Quezon City, NCR court. If the mediation still fails, the parties will be referred back to the judge for judicial dispute resolution (JDR). If the JDR process fails, the case will be raffled to another judge who will then proceed with the litigation of the case. It is worthy to note that parties who refuse to appear before the PMC to mediate, and those who fail to participate in JDR, may be subject to the following sanctions, among others: censure, reprimand, contempt, requiring the absent party to reimburse the appearing party his costs, including attorneys’ fees.
+
+This clause shall survive termination of this agreement.
+
+BigBenta Service strictly considers this information as confidential and is protected under the Privacy Policy of the Site.
+
+Direct Payments. Direct payments are outside BigBenta Service. Therefore, BigBenta is not liable for any losses that may be incurred through this process.
+
+Claims and Disputes. Although highly unlikely, the Members involved may inform the Site by sending an email to: support@bigbenta.com. USE YOUR BOOKING ID AS THE SUBJECT LINE OF THE EMAIL. Our support team will be more than glad to assist you.
+
+Liability. Our responsibilities are limited to providing access to the Services to facilitate the transactions between and among the Service Providers directly with each other. All other activity and transactions are beyond the responsibility or liability of BigBenta Service.
+
+Dispute Resolution. We may try to help the Site members resolve disputes. If we do, we do so in our sole discretion, and we have no obligation to try to resolve disputes between Members. To the extent we attempt to resolve disputes, we will do so in good faith based solely on the general rules and standards of the Application, and we will not make judgments regarding legal issues or claims.
+
+MEMBER INFORMATION
+
+Definition. Your Information is defined as any information post or other material you provide (directly or indirectly), including through the registration process for a Booking, an Event, use of the Site or through the use of our Application, in any public message board or through email. You are solely responsible for Your Information, and we act merely as a passive conduit for your online distribution and publication of your Public Information.
+
+Any of Your Information that, through the use of our Application or otherwise, you submit or make available for inclusion on publicly accessible areas of our website is referred to as Public Information; any other portion of Your Information shall be referred to as Private Information.Publicly accessible areas of our website are those areas that are available either to some or all of our members (i.e., not restricted to your viewing only) or to the general public.
+
+Restrictions. In consideration of your use of our Application, you agree to provide truthful information when requested. Misleading, unsolicited, unlawful, and/or spam postings/email are prohibited. Any policies, rules, or guidelines that may be issued by the Site must be respected by the Member. You must follow any policies made available to you.
+
+You are responsible in maintaining your account. You should immediately notify BigBenta as to any unauthorized use or issues encountered with your registration, member account, or password.
+
+You agree that all information or data of any kind (“Content”), publicly or privately provided, shall be the sole responsibility of the provider of the said Content or the account member such as but not limited to the following:
+
+a) You cannot use of foul or discriminatory language in any part of BigBenta Service. Further, spamming of any form is subject for account termination. Once proven, notice will be or may not be sent prior to termination;
+
+b) You shall not provide any Content which is unlawful, illegal, threatening, harmful, abusive, harassing, stalking, tortuous, defamatory, libelous, vulgar, obscene, offensive, objectionable, pornographic, give rise to civil or criminal liability, or which may applicable local, national or international laws;
+
+c) You cannot perform any acts in the nature of selling or act of selling illegal services. Selling goods and the like or the sale of illegal service is strictly prohibited at BigBenta Service;
+
+d) You cannot send inquiries to people that are unrelated to what they do or described in their profiles. BigBenta Service considers these things as SPAM and therefore will be grounds for banning your profile;
+
+e) You cannot impersonate or misrepresent your association with any person or entity, or forge or otherwise seek to conceal or misrepresent the origin of any Content provided by you. Organizations or companies who offer services are encouraged to have their employees create profiles instead;
+
+f) You must not collect or harvest any data about other Members;
+
+g) You cannot provide or use any Content or Service on BigBenta Service in any commercial manner or in any manner that would involve junk mail, spam, chain letters, pyramid schemes, or any other form of unauthorized advertising without our prior written consent; and
+
+h) You cannot provide any Content that may give rise to our civil or criminal liability or which may constitute or be considered a violation of any local, national or international law, including but not limited to laws relating to civil, criminal, copyright, trademark, patent, or trade secrets.
+
+Restriction on Use of Your Information. Except as otherwise provided in our privacy policy, we will not sell, rent or otherwise disclose any of your Personally Identifiable Information (as defined in our privacy policy) about you (including your email address) to any third party.
+
+We do not claim ownership of Your Information. We will use Your Information only in accordance with our privacy policy. However, to enable us to use your Public Information and to ensure we do not violate any rights you may have in your Public Information, you grant the Site a non-exclusive, worldwide, perpetual, irrevocable, royalty-free, sub-licensable (through multiple tiers) right to exercise, commercialize and exploit the copyright, publicity, and database rights (but no other rights) you have in your Public Information, in any media now known or not currently known, with respect to your Public Information.
+
+Limited License. Subject to the Terms and Conditions and all applicable Laws and regulations, BigBenta Service grants you a non-exclusive, non-transferable, non-assignable personal, limited license to access, use and display this Website. This license is not a transfer of title to the Website. You must retain all copyright and other proprietary notices on all copies of the Website.
+
+In addition, you may not modify the Website in any way or reproduce, publicly display, perform, distribute, create derivative works of, or otherwise use the Website for any public or commercial purpose, except as these Terms and Conditions specifically permit. You may not use the Website to design, manufacture, or repair parts, or to obtain government approval to do so without the BigBenta Service’s express, written permission.
+
+Control. You, and not the Site, are entirely responsible for all of the Public Information that you upload, post, email, transmit or otherwise make available via our Application. We do not control your Public Information or the Public Information of or posted by other Members and do not guarantee the accuracy, integrity or quality of Your Information or the Information of or posted by other Members. Nor do we endorse any opinions expressed by you or other Members. You understand that by using our Application, you may be exposed to information that is offensive, indecent or objectionable. We do not have any obligation to monitor, nor do we take responsibility for, Your Information, Public Information or information of or posted by other Members. You agree that under no circumstances will the Site its directors, officers, shareholders, employees, consultants, agents, advisers, affiliates, subsidiaries or its third-party partners be liable in any way for any information, including, but not limited to, for any errors or omissions in Your Information or the Information of or posted by other Members, or for any loss or damage of any kind incurred as a result of the use of Your Information or Information of or posted by other Members posted, emailed, transmitted or otherwise made available in connection with our Application, or for any failure to correct or remove information.
+
+Other Members. We do not control the information provided by other Members, which is made available through our system. You may find other Members' information to be offensive, harmful, inaccurate or deceptive. Please use caution and common sense when using our website. Please note there is a risk that you may be dealing with underage persons or people acting under false pretense.
+
+Privacy. The Site collects registration and other information about you through the Application. Our collection, use, and disclosure of this information is governed by the Site Privacy Policy Statement available at www.bigbenta.com.
+
+We may provide, or third parties may provide, links to other websites or resources. Because we have no control over such websites or resources, you acknowledge and agree that we are not responsible for the availability of such websites or resources, and do not endorse and are not responsible or liable for any content, advertising, products, or other materials on or available from such websites or resources. You also acknowledge and agree that the Site shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such websites or resource.
+
+SERVICE PROVIDERS
+If you are an individual using the Website and / or have register for an Account as a Service Provider, you represent and warrant that you have the authority to bind the individual and / or company that is responsible for and operates the business as a Service Provider and your acceptance of the Terms of Use will be deemed an acceptance by that Service Provider.
+
+By signing up, registering or creating an Account on the Website as a Service Provider, you agree and undertake to comply with any requests for information which we may make for the purpose of verifying the legality, legitimacy, conduct and proper establishment of your (i) business, company or operations; and / or (ii) provision of your Service.
+
+Service Providers shall not:
+
+a. Register or list on the Website in a category of Service which they do not offer or that is irrelevant to or inappropriate for the Service they are offering;
+
+b. Misrepresent the location(s) at which they will provide a Service;
+
+c. Include third party brand names or other inappropriate keywords in their Profile, title or any posting, messages or submission made in or through the Website;
+
+d. Use misleading titles, words or phrases that do not accurately describe the Service they provide;
+
+e. Include any information in their Profile that is fraudulent or otherwise incorrect;
+
+f. Do anything to circumvent or avoid any fees that BigBenta may charge;
+
+g. Conduct fraud or misconduct on any promotions or partnerships which BigBenta may conduct;
+
+h. Use their Profile or the Website for promoting (i) products or goods; (ii) Services which are not offered by the Service Provider through the Website; (iii) Services which are not a recognized category on the Website; (iv) any website, service, product, party or anything not directly related to their Service or otherwise prohibited by BigBenta in its sole discretion from time to time; or (iv) any services that may be prohibited under law;
+
+i. Solicit Service Client or any person to pay or do anything not specifically permitted by these Terms of Use or by BigBenta as it may in its sole discretion determine from time to time;
+
+j. Offer or solicit any Service or do anything that contravenes these Terms of Use, the Privacy Policy or any laws.
+
+SERVICE CLIENT
+Service Client shall not:
+
+a. Commit to purchasing or using a Service with no intention of paying for such Service;
+
+b. Sign up, request or negotiate a price for, use, or otherwise solicit a Service (i) with no genuine intention as at the time of such conduct of following through with your use of or payment for the Service; (ii) for the purposes of using pricing, quotations or other information received in doing so for commercial or competitive purposes, business or market intelligence purposes or general surveying; or (iii) any other non-personal use;
+
+c. Request for or agree to purchase a Service when (i) you know, have reason to believe or have been put on notice that you do not meet the Service Provider's terms; or (ii) with the intention of causing disruption, committing fraud or other tortious or illegal purpose.
+
+d. As a Service User, you are encouraged to exercise reasonable and independent judgment, discretion and care in deciding to hire and engaging with a Service Provider.
+
+WARRANTIES
+MANY JURISDICTIONS HAVE LAWS PROTECTING CONSUMERS AND OTHER CONTRACT PARTIES, LIMITING THEIR ABILITY TO WAIVE CERTAIN RIGHTS AND RESPONSIBILITIES. WE RESPECT SUCH LAWS; NOTHING HEREIN SHALL WAIVE RIGHTS OR RESPONSIBILITIES THAT CANNOT BE WAIVED.
+
+To the extent permitted by law, (1) BigBenta Service makes no promise as to the Site Content, its completeness, accuracy, availability, timeliness, propriety, security or reliability; (2) Your access and use are at Your own risk, and Content is provided AS IS and AS AVAILABLE (3) we are not liable for any harm resulting from (a) Member content; (b) Member conduct, e.g. illegal conduct; (c) Your use of the Content; or (d) BigBenta Service makes no representations or warranties of any kind with respect to this site or its contents, all conditions, warranties, terms and undertakings express or implied statutory or otherwise in respect of the provision of the Content and the Site are excluded to the fullest extent permitted by law; (4) WE AND OUR OFFICERS, DIRECTORS, EMPLOYEES DISCLAIM ALL WARRANTIES and CONDITIONS, EXPRESS OR IMPLIED, OF CONDITIONS OF THE SERVICE TO BE AVAILED OF, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS; (5) FURTHER, WE ARE NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES, OR ANY LOSS (E.G. OF PROFIT, REVENUE, DATA, OR GOODWILL).
+
+The Content on the Site, Community Center, Collaborations, Timeline, Events, and the Bookings are published and included in good faith. The Content may contain inaccuracies or typographical errors. Although BigBenta Service endeavors to ensure that the information on this site is correct, no warranty, express or implied, is given as to its accuracy and BigBenta does not accept any liability for error or omission.
+
+In particular, the support and information in the Bookings, Forum and Site does not constitute any form of advice, recommendation or arrangement by BigBenta and is not intended to be relied upon by Members in making (or refraining from making) any specific decisions or to be a substitute for obtaining professional advice. You are responsible for checking the accuracy of relevant facts and opinions given on the Site before entering into any commitment or taking any other form of action or inaction based upon them.
+
+BigBenta does not represent or guarantee the truthfulness, accuracy or reliability of postings submitted by other Members and moderators on the Forum, nor endorses any opinions expressed by the said Members or moderators.
+
+BigBenta Service DOES NOT WARRANT THAT THE SITE, the SERVICE, AND ANY BigBenta Service content or member content, WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE SITE WILL BE UNINTERRUPTED OR ERROR-FREE, or that the service will be available. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY BigBenta OR ITS AUTHORIZED REPRESENTATIVES SHALL CREATE A WARRANTY.
+
+Indemnity. You agree to indemnify and hold BigBenta Service and its officers, directors, shareholders, agents, employees, consultants, affiliates, subsidiaries and third-party partners free and harmless from any claim or demand, including reasonable attorneys' fees, made by any third party due to or arising out of your breach of your representations and warranties or this Agreement or the documents it incorporates by reference, your use of our Application, Your Information, your violation of any law, statute, ordinance or regulation or the rights of a third party, your participation in the Site, as an Event Owner (whether the claim or demand is due to or arising out of your transportation to or from, attendance at, or the actions of you or other members at any Event), or in creating or participating in Bookings. Without being limited to the foregoing, you, as a Member, Event Owner, or being involved in Bookings agree to indemnify and hold BigBenta Service and its officers, directors, shareholders, agents, employees, consultants, affiliates, subsidiaries and third-party partners free and harmless from any claim or demand, including reasonable attorneys' fees due to or arising out of your actions as a Member, Event Owner, or involvement in a Booking.
+
+INTELLECTUAL PROPERTY
+The Site and its original content, features and functionality are owned by BigBenta and are protected by domestic and international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws.
+
+By providing any Content to the Site, you agree to grant to us a worldwide, royalty-free, perpetual, non-exclusive right and license including any moral rights or other necessary rights) to use, display, reproduce, modify, adapt, publish, distribute, perform, promote, archive, translate, and to create derivative works and compilations, in whole or in part. Such license will apply with respect to any form, media, technology known or later developed.
+
+Trademarks. The Site trademarks and service marks, and other the Site logos, products and service names, are trademarks of the BigBenta the Site Trademarks. Except as otherwise permitted by law, you agree not to display or use in any manner the Site Trademarks without the Site's prior written consent.
+
+Copyrights and Trademarks of Others. The Site respect the intellectual property of others, and we ask our Members to do the same. To the extent the Site uses a trademark that is the property of a third party, the Site shall provide clear notice to anyone viewing the Site's use of that trademark that (a) the Site does not own the trademark and that the trademark is the property of a third party, (b) the Site has no affiliation, connection or association with that third party, and (c) if applicable, that third party has not approved or sponsored the Site's use of the trademark in any way. We may, in appropriate circumstances and in our discretion, remove, or disable access to, material that infringes on the rights of others, and terminate access to our Site and/or Application to those who may be repeat infringers. If you believe that your work has been copied in a way that constitutes copyright infringement, or your intellectual property rights have been otherwise violated, please contact our Site and provide the following information: (1) an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright or other intellectual property interest; (2) a description of the copyrighted work or other intellectual property that you claim has been infringed; (3) a description of where the material that you claim is infringing is located on the site; (4) your address, telephone number, and email address; (5) a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; (6) a statement by you, made under penalty of perjury, that the above information in your Notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner's behalf.
+
+Proprietary Rights. You acknowledge and agree that our Application contains proprietary and confidential information that is protected by applicable intellectual property and other laws. You also acknowledge and agree that content contained in sponsor advertisements or information presented to you through our Application or advertisers is protected by copyrights, trademarks, service marks, patents or other proprietary rights and laws. Except as consented to by the Site or advertisers in writing, you agree not to modify, rent, lease, loan, sell, distribute or create derivative works based on our Application, in whole or in part.
+
+No Resale. You agree not to reproduce, duplicate, copy, sell, resell or exploit for any commercial purposes, any portion of the Site's Application, use of the Application, or access to the Application for any sales of goods or services, or promotion of a company, good, or service unrelated to the topic or spirit or the Site.
+
+PAYMENT AND CHARGES
+
+General. Access to our websites and use of selected features of our Application is free. We may charge fees for various premium features and services that we offer, and we will notify you of those charges at the time that we offer you the premium features or services for a fee. We may, in our sole discretion, and by notifying you on our website, change this policy and begin charging for access to our website and other features and services, and we may, in our sole discretion, add, remove or change the features and services we offer or the fees (including the amount or the type of fees) we charge at any time. If we introduce a new service or charge a new fee, we will establish and notify you of the fees for that service at the launch of the service or start of charging a new fee. If we notify you of new fees or change the fees for an existing service, you agree to pay all fees and charges specified and all applicable taxes for your continued use of the applicable service. Our responsibilities are limited to providing access to the Services to facilitate the transactions between and among the Members directly with each other. All other activity and transactions are beyond the responsibility or liability of BigBenta. We are not responsible for any charges or expenses you incur resulting from being billed by us in accordance with these Terms and Conditions.
+
+It is free to register for an Account, build areas in which you can upload and store your unique images and designs, either privately or for public viewing by other Members.
+
+LIABILITIES
+
+Limitation of Liability. You agree that in no event or manner shall the Site be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses (even if the Site has been advised of the possibility of such damages), arising out of or in connection with our Application or this Agreement or the inability to use our Application (however arising, including negligence), arising out of or in connection with Third Party Transactions or arising out of or in connection with your use of our Site, our Application, attendance at Events or creation of bookings. Our liability to you or any third parties in any circumstance is limited to the greater of (a) the amount of fees, if any, you pay to us in the twelve (12) months prior to the action giving rise to liability, or (b) Five thousand pesos (PhP 5,000.00).
+
+Equitable remedies. You hereby agree that if the terms of this Agreement are not specifically enforced, BigBenta will be irreparably damaged, and therefore you agree that BigBenta shall be entitled, without bond, other security, proof of damages, to appropriate equitable remedies with respect any of this Agreement, in addition to any other available remedies.
+
+Indemnification. You agree to indemnify, defend and hold the BigBenta Service , and the officers, directors, employees and agents of BigBenta Service, free and harmless from and against any and all claims, demands, suits and all other proceedings, and all resulting loss, damage, liability, cost and expense (including reasonable attorneys’ fees), brought by any third-party in connection with or arising out of information, or through the use of the Application and/or involvement with Events and/or Bookings that you submit, post to, or transmit through the Site or Site, your violation of these Terms, or your violation of any rights of another. We reserve, and you grant to us, the right to assume exclusive defense and control of any matter subject to indemnification by you. All rights and duties of indemnification that are set forth herein shall survive termination of these Terms.
+
+Dispute Resolution. The parties will attempt in good faith to resolve through negotiation any dispute, claim or controversy arising out of or relating to this Agreement including the documents it incorporates by reference, your use of our Application, Your Information, your violation of any law or the rights of a third party, your participation in Events and/or Bookings. In the Event that the dispute, claim or controversy is not resolved by these negotiations, the matter will be submitted for arbitration under Philippine domestic laws for final and binding arbitration. Nonetheless, legal action taken by the Site to collect any fees and/or recover damages for, or obtain an injunction relating to, our website operations, intellectual property or our Application, shall not be submitted to mediation or arbitration except as otherwise agreed to in writing by the Site. In addition, either you or the Site may seek any interim or preliminary relief from a Court of competent jurisdiction exclusively in Paranaque City, NCR, Philippines to the exclusion of all others necessary to protect the rights or property of you or the Site pending the completion of arbitration.
+
+Negotiation. Either party may initiate negotiations by providing written notice in letter form to the other party, setting forth the subject of the dispute and the relief requested. The recipient of such notice will respond in writing within fifteen (15) business days with a statement of its position on and recommended solution to the dispute. If the dispute is not resolved by this exchange of correspondence, then representatives of each party with full settlement authority will meet in person or otherwise at a mutually agreeable time and place within thirty (30) business days from the date of the initial notice in order to exchange relevant information and perspectives, and to attempt to resolve the dispute.
+
+Enforcement. The Agreement reached in the negotiations or the terms of the judgment in the mediation or arbitration proceedings, as applicable, may be enforced in and by any Court of competent jurisdiction, and the party seeking enforcement shall be entitled to an award of all costs, fees and expenses, including attorneys fees, to be paid by the party against whom enforcement is ordered.
+
+Notice Waiver. By agreeing to this Agreement you have also agreed that all disputes, claims or controversies arising out of or relating to this Agreement will be decided by negotiation, neutral mediation and/or neutral arbitration and you are giving up any rights you might possess to have those matters litigated in a court trial. Also, by agreeing to this Agreement you are giving up your judicial rights to discovery and appeal except to the extent that they are specifically provided for under this Agreement. Your Agreement to this arbitration provision is voluntary.
+
+Dispute Resolution. We may try to help the Site members resolve disputes. If we do, we do so in our sole discretion, and we have no obligation to try to resolve disputes between Members. To the extent we attempt to resolve disputes, we will do so in good faith based solely on the general rules and standards of the Application, and we will not make judgments regarding legal issues or claims.
+
+TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL BigBenta BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, PUNITIVE, EXEMPLARY, DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SERVICE, AND ANY BigBenta content or member content, or any agreement/understanding purchased by you via the service HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF BigBenta Service HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. In no event shall BigBenta ’s total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of FIVE THOUSAND PHILIPPINE PESOS (Php 5,000.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.
+
+MISCELLANEOUS
+Entire Agreement. This Agreement constitutes the entire Agreement between you and the Site, superseding any prior Agreements between you and the Site. To the extent that you have previously registered with the Site and provided Your Information, this Agreement now governs how the Site may use Your Information, whether provided in the past or the future.
+
+No Agency. No agency, partnership, joint venture, employee-employer or franchiser-franchisee relationship between you and the Site is intended or created by this Agreement.
+
+Governing Law. This Agreement (and any further rules, regulations, policies, or guidelines incorporated by reference) shall be governed and construed in accordance with the laws of Philippines, without giving effect to any principles of international law and the conflicts of law.
+
+Changes to the Agreement. We reserve the right, at our sole discretion, to modify or replace these Terms and Conditions by posting the updated terms on the Site. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms and Conditions. Please review this Agreement periodically for changes. If you do not agree to any of this Agreement or any changes to this Agreement, do not use, access or continue to access the Site or discontinue any use of the Site immediately.
+
+No Guaranty. We do not guarantee continuous, uninterrupted or secure access to our Application, and operation of our website may be interfered with by numerous factors outside of our control.
+
+No Waiver. The Site's failure to exercise or enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision and does not waive our right to act with respect to subsequent or similar breaches.
+
+Severance. If any provision of this Agreement is found to be invalid by a court of competent jurisdiction, you and the Site nevertheless agree that the court should endeavor to give effect to the parties' intentions as reflected in the provision, and that the other provisions of this Agreement will remain in full force and effect.
+
+Limitation. You and BigBenta Service each agree that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to the use of our Application or this Agreement must be filed within one (1) year after the claim or cause of action arose or be forever barred.
+
+By indicating during registration that you have read and agreed to this Agreement, you are agreeing that you have read and understood this Agreement and agree to all of the terms of this Agreement; that all disputes, claims or controversies arising out of or relating to this Agreement shall first be dealt with through negotiation and mediation and if the dispute is not resolved shall then be submitted to binding, neutral arbitration. All provisions of this Agreement that by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability."/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+</LinearLayout>

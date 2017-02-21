@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="@color/mediumBlue"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/grandtotal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="with shipping fee inclusive (₱100)"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/shippingfee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_4sdp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/YELLOW"
+            android:text="Continue shopping"
+            android:id="@+id/continueshopping"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/button_selector"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector1"
+            android:text="Proceed to checkout"
+            android:id="@+id/proceedtocheckout"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_110sdp"/>
+
+</LinearLayout>

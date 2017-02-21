@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shopby">
+        <item>₱200.00 - ₱299.99</item>
+        <item>₱300.00 - ₱399.99 </item>
+        <item>₱400.00 - ₱499.99 </item>
+        <item>₱500.00 - and above </item>
+    </string-array>
+    <string-array name="category">
+        <item>Fish</item>
+        <item>Shellfish</item>
+        <item>Shrimp</item>
+        <item>Lobster</item>
+        <item>Specialty</item>
+        <item>Combo Packs</item>
+        <item>Sweet Treats</item>
+        <item>Canned Food</item>
+        <item>Squid</item>
+    </string-array>
+    <string-array name="sortby">
+        <item>Name</item>
+        <item>Price</item>
+        <item>Position</item>
+    </string-array>
+
+    <string-array name="recipeAndTips">
+        <item>Specialty</item>
+        <item>Crabs</item>
+        <item>Lobster</item>
+        <item>Fish</item>
+        <item>Shrimp</item>
+        <item>Shellfish</item>
+        <item>Squid</item>
+        <item>Sashimi</item>
+        <item>Canned Food</item>
+        <item>Sauces</item>
+        <item>Seafood Deli</item>
+        <item>Combo Packs</item>
+    </string-array>
+
+    <string-array name="country_array">
+        <item>Philippines</item>
+    </string-array>
+
+    <string-array name="delivery_date">
+        <item>Wholeday</item>
+        <item>Halfday</item>
+        <item>Hourly(Php400)</item>
+    </string-array>
+    <string-array name="blog">
+        <item>Seafood Health Fact</item>
+        <item>Hottest Catch in Town</item>
+        <item>Seadilicious</item>
+        <item>Know Your Seafood</item>
+        <item>Seafood Fun Facts</item>
+    </string-array>
+
+    <string-array name="condition">
+        <item>Real Estate</item>
+        <item>Cars/Vehicles</item>
+        <item>Mobile/Gadgets</item>
+        <item>Computers</item>
+        <item>Clothes</item>
+        <item>Pets and  Accessories</item>
+        <item>Hobbies</item>
+        <item>Appliances</item>
+        <item>Furniture</item>
+        <item>Bags and Luggages</item>
+        <item>Bussiness for Sale</item>
+        <item>Services</item>
+    </string-array>
+
+
+</resources>

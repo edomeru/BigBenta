@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/iconhome"
+            android:title="Home" />
+        <item
+            android:id="@+id/register"
+            android:icon="@drawable/iconregister"
+            android:title="Register" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/iconabout"
+            android:title="About Us" />
+        <item
+            android:id="@+id/myprofile"
+            android:icon="@drawable/iconregister"
+            android:title="My Profile" />
+
+        <!--<item-->
+            <!--android:id="@+id/feedback"-->
+            <!--android:icon="@drawable/ic_menu_share"-->
+            <!--android:title="Send Feedback" />-->
+    </group>
+
+    <item android:title="Others">
+        <menu>
+
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/iconhelp"
+                android:title="Help Center" />
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/iconlogout"
+                android:title="logout" />
+        </menu>
+    </item>
+
+</menu>

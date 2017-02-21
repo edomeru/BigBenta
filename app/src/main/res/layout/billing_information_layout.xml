@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:clickable="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_35sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Billing Information"
+                android:textSize="24sp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                app:met_floatingLabelText="First name"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Middle name/ Initial"
+                app:met_floatingLabelText="Middle name/ Initial"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                app:met_floatingLabelText="Last name"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Company"
+                app:met_floatingLabelText="Company"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email address"
+                app:met_floatingLabelText="Email address"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Home Address"
+                app:met_floatingLabelText="address"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/country"
+                android:popupBackground="@android:color/white"
+                android:scrollbars="none"
+                android:spinnerMode="dropdown"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telephone"
+                app:met_floatingLabelText="Telephone"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fax"
+                app:met_floatingLabelText="Fax"
+                app:met_floatingLabel="highlight"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/shipping">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ship to this address"
+                    android:id="@+id/shiptothisaddress"
+                    android:buttonTint="@color/colorPrimary"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ship to different address"
+                    android:buttonTint="@color/colorPrimary"
+                    android:id="@+id/shiptodifferentaddress"/>
+
+            </RadioGroup>
+
+            <ImageButton
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/toshippingmethod"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="right"
+                android:background="@drawable/background_rounded_button1"
+                android:padding="1dp"
+                android:layout_marginBottom="@dimen/_160sdp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>

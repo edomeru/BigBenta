@@ -1,0 +1,152 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--tools:context="ph.dreambig.bigbenta.marketplacev2.Home.Store.MyCart.MyCart2">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.TermsFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="ph.dreambig.bigbenta.marketplacev2.TermsFragment">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/PopupOverlay" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:id="@+id/toolbar_title"
+                        android:text="My Cart"
+                        android:textColor="@color/white"
+
+                        />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="end|center"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:id="@+id/toolbar_right_subtitle"-->
+                    <!--android:layout_toLeftOf="@+id/toolbar_title"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:visibility="gone"-->
+                    <!--/>-->
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<include layout="@layout/content_my_cart2" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp"
+
+            >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <!--<Button-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:background="@drawable/button_selector1"-->
+                            <!--android:text="Continue Shopping"-->
+                            <!--android:id="@+id/continueshop"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:layout_marginLeft="@dimen/_2sdp"-->
+                            <!--android:layout_marginRight="@dimen/_2sdp"-->
+
+                            <!--/>-->
+
+                        <WebView
+                            android:id="@+id/webView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="5"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_125sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_gravity="bottom|end"
+            app:rippleColor="@color/orangeStore"
+            app:backgroundTint="@color/mediumBlue"
+            android:src="@drawable/arrow" />
+        <TextView
+            android:layout_marginBottom="@dimen/_167sdp"
+            android:layout_marginRight="@dimen/_23sdp"
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="SWIPE TO RIGHT"
+            android:elevation="7dp"
+            android:visibility="gone"
+            android:background="@drawable/swipetoright"
+            android:id="@+id/textFloating"/>
+
+    </FrameLayout>
+        </FrameLayout>
+</LinearLayout>
+<!--</android.support.design.widget.CoordinatorLayout>-->

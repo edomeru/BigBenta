@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.AboutFragment">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/myCoordinator"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:isScrollContainer="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"  >
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="8dp"
+                card_view:cardCornerRadius="2dp">
+
+    <!--<WebView-->
+        <!--android:id="@+id/webView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"  >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is BigBenta?"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_20sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:id="@+id/whatisBB"
+                    />
+    <TextView
+        android:id="@+id/whatisBBparagraph"
+       android:textColor="@color/mediumBlue"
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:textSize="@dimen/_17sdp"
+        android:layout_height="wrap_content"
+        android:text=" BigBenta is about extending the buying and selling activity in cyber space. Philippine merchants and individuals who intend to buy or sell their products can now tap the borderless reach of the internet. Where the common buying and selling is done through personal contact and geographical limitation, BigBenta will put in place means to ensure buyers and sellers, big or small will conveniently and safely trade with one another in cyberspace. It is made by Filipinos for the Filipinos."/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Why BigBenta?"
+                        android:textSize="@dimen/_20sdp"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:id="@+id/whyBB"
+                        />
+                    <TextView
+                        android:id="@+id/whyBBparagraph"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_17sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_67sdp"
+                        android:textColor="@color/mediumBlue"
+                        android:text=" BigBenta was created with one goal in mind, and that is to help Philippine individual, micro, small and medium enterprises reach their full business potential in cyber space. The entrepreneurs behind BigBenta, created an e-commerce ecosystem for entrepreneur, from the grass root level all the way to medium enterprises which will serve as an e-marketplace for everyone. This will not only expand the market for both buyers and sellers, but create a new sales and distribution channel to reach more customers for the striving entrepreneurs."/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+</LinearLayout>

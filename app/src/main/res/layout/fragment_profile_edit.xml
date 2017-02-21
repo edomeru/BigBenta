@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/email"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_scrollFlags="enterAlwaysCollapsed"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    android:layout_marginRight="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+            </LinearLayout>
+
+            <EditText android:id="@+id/first"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="first name"
+                android:textColor="#000"
+                android:textColorHint="@color/mediumBlue"
+                android:windowSoftInputMode="adjustNothing"
+                />
+
+
+
+            <EditText android:id="@+id/last"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="last name"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:textColor="#000"
+                android:textColorHint="@color/mediumBlue"
+                android:layout_below="@+id/middle"
+
+                />
+
+            <EditText android:id="@+id/mobile"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="mobile"
+                android:textColor="#000"
+                android:textColorHint="@color/mediumBlue"
+                android:layout_below="@+id/last"
+                />
+
+            <EditText android:id="@+id/emaill"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="email address"
+                android:textColor="#000"
+                android:textColorHint="@color/mediumBlue"
+                android:layout_below="@+id/mobile"
+
+                />
+            <EditText android:id="@+id/phone"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="phone"
+                android:textColor="#000"
+                android:textColorHint="@color/mediumBlue"
+                android:layout_below="@+id/emaill"
+
+                />
+            <!--<EditText android:id="@+id/Unitt"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:hint="unit"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/emaill"-->
+
+                <!--/>-->
+            <!--<EditText android:id="@+id/Street"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:hint="street"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/Unitt"-->
+
+                <!--/>-->
+
+            <!--<EditText android:id="@+id/Barangay"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:hint="barangay"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/Street"-->
+
+                <!--/>-->
+            <!--<EditText android:id="@+id/city_name"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--android:hint="city name"-->
+            <!--android:textColor="#000"-->
+            <!--android:textColorHint="#000"-->
+            <!--android:layout_below="@+id/Barangay"-->
+
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/region_name"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:hint="region name"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/city_name"-->
+
+                <!--/>-->
+
+            <!--<EditText android:id="@+id/country_name"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:hint="country"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/region_name"-->
+
+                <!--/>-->
+            <!--<EditText android:id="@+id/zip"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="58dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textEmailAddress"-->
+                <!--android:hint="zip code"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/country_name"-->
+
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+            <!--<CheckBox android:id="@+id/checkbox"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="25dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Change Password"-->
+                <!--android:onClick="onCheckboxClicked"-->
+                <!--android:layout_below="@+id/emaill"/>-->
+
+            <!--<EditText android:id="@+id/cpassword"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:hint="current password"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/checkbox"-->
+                <!--/>-->
+            <!--<EditText android:id="@+id/newpassword"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:hint="new password"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/cpassword"-->
+                <!--/>-->
+            <!--<EditText android:id="@+id/confpassword"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="56dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:hint="confirm new password"-->
+                <!--android:textColor="#000"-->
+                <!--android:textColorHint="#000"-->
+                <!--android:layout_below="@+id/newpassword"-->
+                <!--/>-->
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView >
+</LinearLayout>

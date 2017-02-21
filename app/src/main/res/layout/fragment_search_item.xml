@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.SearchItemFragment"
+    android:background="@color/lightGrayBG">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text=" "
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/labelNotification"
+        android:visibility="gone"
+        />
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/store_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_57sdp"
+        android:background="@color/lightGrayBG"/>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</FrameLayout>

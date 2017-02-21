@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.Help_CenterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/myCoordinator"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    <ScrollView
+        android:id="@+id/myScrollingContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"  >
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="8dp"
+                card_view:cardCornerRadius="2dp">
+
+                <!--<WebView-->
+                <!--android:id="@+id/webView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"  >
+                    <TextView
+                        android:id="@+id/hc_Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="What is BigBenta?"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/_20sdp"
+                        android:textStyle="bold"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        />
+                    <TextView
+                        android:id="@+id/hc_body"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/mediumBlue"
+                        android:textSize="@dimen/_17sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+                    <TextView
+                        android:id="@+id/hc_body2"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_17sdp"
+                        android:textColor="@color/mediumBlue"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"/>
+                    <TextView
+                        android:id="@+id/hc_body3"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/mediumBlue"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="@dimen/_17sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_90sdp"/>
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</FrameLayout>

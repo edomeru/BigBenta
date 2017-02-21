@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.SampleWebView">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+      android:layout_marginTop="@dimen/_4sdp"
+
+        >
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:isScrollContainer="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill_vertical"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/button_selector1"-->
+            <!--android:text="Continue Shopping"-->
+            <!--android:id="@+id/continueshop"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_marginLeft="@dimen/_2sdp"-->
+            <!--android:layout_marginRight="@dimen/_2sdp"-->
+
+           <!--/>-->
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+       />
+                </RelativeLayout>
+</LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_225sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:layout_gravity="bottom|end"
+        app:rippleColor="@color/white"
+        app:backgroundTint="@color/mediumBlue"
+        android:src="@drawable/arrow" />
+
+</FrameLayout>

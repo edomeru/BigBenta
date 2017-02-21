@@ -1,0 +1,346 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.TermsFragment">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/toolbar_title"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="Sell Item"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end|center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:id="@+id/toolbar_right_subtitle"
+                        android:layout_toLeftOf="@+id/toolbar_title"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/myCoordinator"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ScrollView
+            android:id="@+id/myScrollingContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"  >
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="8dp"
+                    card_view:cardCornerRadius="2dp">
+
+                    <!--<WebView-->
+                    <!--android:id="@+id/webView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center" />-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"  >
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Title"
+                            app:met_floatingLabelText="Title"
+                            app:met_floatingLabel="highlight"
+                            android:textSize="15sp"
+                            android:singleLine="true"/>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Price"
+                            app:met_floatingLabelText="Price"
+                            app:met_floatingLabel="highlight"
+                            android:textSize="15sp"
+                            android:singleLine="true"/>
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Description"
+                            app:met_floatingLabelText="Description"
+                            app:met_floatingLabel="highlight"
+                            android:textSize="15sp"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Condition"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="18sp"/>
+                        <Spinner
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/condition"
+                            android:popupBackground="@android:color/white"
+                            android:scrollbars="none"
+                            android:spinnerMode="dropdown"/>
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Transmission"-->
+                            <!--android:layout_marginTop="@dimen/_8sdp"-->
+                            <!--android:textSize="18sp"/>-->
+                        <!--<Spinner-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/transmission"-->
+                            <!--android:popupBackground="@android:color/white"-->
+                            <!--android:scrollbars="none"-->
+                            <!--android:spinnerMode="dropdown"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Mileage"-->
+                            <!--android:layout_marginTop="@dimen/_8sdp"-->
+                            <!--android:textSize="18sp"/>-->
+                        <!--<Spinner-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/Mileage"-->
+                            <!--android:popupBackground="@android:color/white"-->
+                            <!--android:scrollbars="none"-->
+                            <!--android:spinnerMode="dropdown"/>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Brand"-->
+                            <!--android:layout_marginTop="@dimen/_8sdp"-->
+                            <!--android:textSize="18sp"/>-->
+                        <!--<Spinner-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/Brand"-->
+                            <!--android:popupBackground="@android:color/white"-->
+                            <!--android:scrollbars="none"-->
+                            <!--android:spinnerMode="dropdown"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Fueltype"-->
+                            <!--android:layout_marginTop="@dimen/_8sdp"-->
+                            <!--android:textSize="18sp"/>-->
+                        <!--<Spinner-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:id="@+id/Fueltype"-->
+                            <!--android:popupBackground="@android:color/white"-->
+                            <!--android:scrollbars="none"-->
+                            <!--android:spinnerMode="dropdown"/>-->
+
+                        <com.rengwuxian.materialedittext.MaterialEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Year Model"
+                            app:met_floatingLabelText="Year Model"
+                            app:met_floatingLabel="highlight"
+                            android:textSize="15sp"
+                            android:singleLine="true"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Select Images for this Item"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="18sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Please take note of the following when uploading the images:"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="File size maximum value is 300KB."
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Size in pixel maximum value is 960 pixels (both width and height)."
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="You have taken the image personally."
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Not transferred and tampered."
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:textSize="18sp"/>
+                        <LinearLayout
+                            android:id="@+id/linearLayoutAddPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_16">
+
+                            <ImageView
+                                android:id="@+id/imageAddPhoto"
+                                android:layout_width="@dimen/item_image_size"
+                                android:layout_height="@dimen/item_image_size"
+                                android:layout_margin="@dimen/margin_5"
+                                android:background="@color/YELLOW"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/cam" />
+                            <ImageView
+                                android:id="@+id/imageAdd1"
+                                android:layout_width="@dimen/item_image_size"
+                                android:layout_height="@dimen/item_image_size"
+                                android:layout_margin="@dimen/margin_5"
+                                android:background="@color/YELLOW"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/cam" />
+
+                            <ImageView
+                                android:id="@+id/imageAdd2"
+                                android:layout_width="@dimen/item_image_size"
+                                android:layout_height="@dimen/item_image_size"
+                                android:layout_margin="@dimen/margin_5"
+                                android:background="@color/YELLOW"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/cam" />
+
+                            <ImageView
+                                android:id="@+id/imageAdd3"
+                                android:layout_width="@dimen/item_image_size"
+                                android:layout_height="@dimen/item_image_size"
+                                android:layout_margin="@dimen/margin_5"
+                                android:background="@color/YELLOW"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/cam" />
+
+                            <ImageView
+                                android:id="@+id/imageAdd4"
+                                android:layout_width="@dimen/item_image_size"
+                                android:layout_height="@dimen/item_image_size"
+                                android:layout_margin="@dimen/margin_5"
+                                android:background="@color/YELLOW"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/cam" />
+
+                            <ImageView
+                                android:id="@+id/imageAdd5"
+                                android:layout_width="@dimen/item_image_size"
+                                android:layout_height="@dimen/item_image_size"
+                                android:layout_margin="@dimen/margin_5"
+                                android:background="@color/YELLOW"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/cam" />
+
+                            <ImageView
+                                android:id="@+id/imageAdd6"
+                                android:layout_width="@dimen/item_image_size"
+                                android:layout_height="@dimen/item_image_size"
+                                android:layout_margin="@dimen/margin_5"
+                                android:background="@color/YELLOW"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/cam" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add Photo"
+                                android:textSize="@dimen/small"
+                                android:paddingTop="@dimen/activity_vertical_margin" />
+
+                        </LinearLayout>
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/submitad"
+                            android:text="SUBMIT AD"
+                            android:textColor="@color/YELLOW"
+                            android:background="@drawable/button_selector"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

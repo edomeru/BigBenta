@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.TermsFragment">
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/appbar"
+    android:theme="@style/AppTheme.AppBarOverlay"
+
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_collapseMode="pin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:textSize="20sp"
+android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/toolbar_title"
+
+                  android:text="Help Center"
+                    android:layout_weight="1"
+
+                    />
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="end|center"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:id="@+id/toolbar_right_subtitle"-->
+                    <!--android:layout_toLeftOf="@+id/toolbar_title"-->
+                    <!--android:layout_marginTop="@dimen/_2sdp"-->
+                    <!--android:visibility="gone"-->
+                    <!--/>-->
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/myCoordinator"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <ScrollView
+            android:id="@+id/myScrollingContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"  >
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="8dp"
+                card_view:cardCornerRadius="2dp">
+
+    <!--<WebView-->
+        <!--android:id="@+id/webView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="center" />-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"  >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is BigBenta?"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+
+                    android:padding="@dimen/_5sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/hc_body"
+                    android:textColor="@color/mediumBlue"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"/>
+                <TextView
+                    android:id="@+id/hc_body2"
+                    android:textColor="@color/mediumBlue"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"/>
+                <TextView
+                    android:id="@+id/hc_body3"
+                    android:textColor="@color/mediumBlue"
+                    android:layout_width="match_parent"
+                    android:textSize="@dimen/_17sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_90sdp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
+</LinearLayout>

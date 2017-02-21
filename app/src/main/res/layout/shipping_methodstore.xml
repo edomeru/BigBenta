@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the suitable delivery date"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="20sp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Delivery date"
+        android:layout_marginRight="@dimen/_73sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:id="@+id/deliverydate"
+        android:focusableInTouchMode="false"
+        app:met_floatingLabelText="Delivery date"
+        app:met_floatingLabel="highlight"
+        android:textSize="15sp"
+        android:singleLine="true"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deliverydatespinner"
+        android:popupBackground="@android:color/white"
+        android:scrollbars="none"
+        android:spinnerMode="dropdown"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flat rate "
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fixed ₱5.00"
+        android:textColor="@color/orangeStore"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Information"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Over the Counter"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textColor="@color/YELLOW"
+        android:textSize="18sp"/>
+
+    <ImageButton
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:id="@+id/imageButton"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/arrow_right"
+        android:layout_gravity="right"
+        android:background="@drawable/background_rounded_button1"
+        android:padding="1dp" />
+
+</LinearLayout>

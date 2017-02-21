@@ -1,0 +1,250 @@
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:id="@+id/product_img"
+            android:background="@color/white"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_gravity="left|center_vertical" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:textSize="20sp"
+                    android:textColor="@color/mediumBlue"
+                    android:paddingLeft="5dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:text="Unit Price:"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/unitPriceText"/>
+
+                <TextView
+                    android:id="@+id/unit_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/mediumBlue"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Subtotal: "
+                    android:id="@+id/SubTotalText"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/mediumBlue"
+                    android:paddingLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="Quantity: "
+                    android:id="@+id/quantityText"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/product_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Sold By: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:id="@+id/soldByText"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/product_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:paddingLeft="5dp"
+                    android:text="Company Name"
+                    android:textColor="@color/mediumBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="Available Stocks: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:id="@+id/asText"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/product_availability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/darkblue"
+                    android:text="100"/>
+
+                <TextView
+                    android:id="@+id/storeId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/darkblue"
+                    android:text="100"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/variantId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/darkblue"
+                    android:text="100"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:text="Description: "-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:paddingLeft="5dp" />-->
+
+                <!--<TextView-->
+                    <!--android:iid="@+iid/desc"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:paddingLeft="5dp"-->
+                    <!--android:textColor="@color/darkblue"-->
+                    <!--android:text="100"/>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="3">
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                   android:src="@drawable/trashcan"
+                    android:id="@+id/deletefromcart"
+                    android:paddingBottom="4dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/mediumBlue"
+                    android:paddingBottom="4dp"
+                    android:id="@+id/quantity"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="ADD TO CART"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:padding="4dp"
+                    android:id="@+id/addtocart"
+                    android:gravity="right"
+                    android:background="@drawable/button_selector1"
+                    android:layout_weight="1"
+                   />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/devider"
+        android:background="#CFD8DC"/>
+
+</android.support.v7.widget.CardView>

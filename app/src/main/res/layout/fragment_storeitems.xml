@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="@dimen/_7sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text=" "
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/labelNotification"
+        android:visibility="gone"
+
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrayBG">
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="17dp"-->
+        <!--android:text="TITLE "-->
+        <!--android:layout_marginLeft="@dimen/_15sdp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:layout_marginBottom="@dimen/_2sdp"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:id="@+id/titleLabel"-->
+        <!--android:background="@color/lightGrayBG"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@android:color/darker_gray"/>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/storeitems_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_57sdp"
+        android:background="@color/lightGrayBG"
+        />
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+</LinearLayout>
+
+
+
+</LinearLayout>

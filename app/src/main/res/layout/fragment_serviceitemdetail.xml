@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_75sdp"
+    android:orientation="vertical">
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:isScrollContainer="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:padding="8dp"
+                    card_view:cardCornerRadius="2dp">
+                    <com.daimajia.slider.library.SliderLayout
+                        android:id="@+id/product_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="370dp"
+                        />
+                </android.support.v7.widget.CardView>
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    custom:selected_padding_left="3dp"
+                    custom:selected_padding_right="3dp"
+                    custom:unselected_padding_left="3dp"
+                    custom:unselected_padding_right="3dp"
+                    custom:selected_width="8dp"
+                    custom:selected_height="8dp"
+                    custom:unselected_width="6dp"
+                    custom:unselected_height="6dp"
+                    custom:selected_color="@color/colorPrimary"
+                    custom:unselected_color="@color/white"
+                    custom:shape="oval"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/_4sdp"
+                    />
+            </RelativeLayout>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:padding="8dp"
+                card_view:cardCornerRadius="2dp">
+            <LinearLayout
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_1sdp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:weightSum="7">
+                <TextView
+                    android:id="@+id/bisname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:text=" "
+                    android:textColor="@color/mediumBlue"
+                    android:layout_weight="6"/>
+
+                    <ImageView
+                        android:id="@+id/share"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share_black_18dp"
+                    android:layout_gravity="right"
+                        android:layout_weight="1"/>
+
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/ratings"
+                    android:text="Ratings"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="70dp">
+
+                        <TextView
+                            android:id="@+id/rateprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rate: " />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mediumBlue"
+                            android:textSize="30sp"
+                            android:text="₱"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/product_price"
+                            android:textSize="30sp"
+                            android:textColor="@color/mediumBlue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_14sdp"
+                            android:id="@+id/ratelabel"
+                            android:text="***rate may vary depending on job scope and location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/product_weight"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:weightSum="7">
+
+
+                        <TextView
+                            android:id="@+id/subcatitem_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text=""
+                            android:textSize="17sp"
+                            android:layout_weight="3"
+                         />
+
+                        <TextView
+                            android:id="@+id/subcat_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text=""
+                            android:textSize="14sp"
+                            android:layout_weight="3"
+                            />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/heart_white"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"/>
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_13sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="@color/mediumBlue"
+                            />
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:id="@+id/name"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/mediumBlue"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_2sdp"
+                            android:text="SP'S NOTE"
+                            android:textSize="12sp"
+                            />
+
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_1sdp"
+                            android:text="On call rate applies to work that can be completed in 3 hours time. SP will bring cleaning equipment."
+                            android:textSize="13sp"
+                            />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/mediumBlue"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/sked"
+                        android:text="Schedule"/>
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/datesched"
+                            android:visibility="gone"
+                            android:text=""/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/HS"
+                            android:visibility="gone"
+                            android:text="Home Service Rates"/>
+                        </LinearLayout>
+
+                    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/call_rate"
+                        android:visibility="gone"
+                        android:text="Per Call"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/call_rateValue"
+                            android:visibility="gone"
+                            android:text=""/>
+                </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/hour_rate"
+                        android:visibility="gone"
+                        android:text="Hour Rate"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/hour_rateValue"
+                            android:visibility="gone"
+                            android:text="hour_rateValue"/>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/hday_rate"
+                            android:visibility="gone"
+                            android:text="Half day"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/hday_rateValue"
+                            android:visibility="gone"
+                            android:text="hday_rateValue"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/fday_rate"
+                            android:visibility="gone"
+                            android:text="Full day"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/fday_rateValue"
+                            android:visibility="gone"
+                            android:text="fday_rateValue"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/esurcharge"
+                            android:visibility="gone"
+                            android:text="Evening Surcharge"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/esurchargeValue"
+                            android:visibility="gone"
+                            android:text="esurchargeValue"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/otsurcharge"
+                            android:text="Overtime Surcharge"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/otsurchargeValue"
+                            android:text="otsurchargeValue"/>
+                    </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginTop="4dp"
+                            android:visibility="gone"
+                            android:id="@+id/SE"
+                            android:text="Own Establishment Rates"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEcall_rate"
+                            android:visibility="gone"
+                            android:text="Per Call"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEcall_rateValue"
+                            android:visibility="gone"
+                            android:text=""/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEhour_rate"
+                            android:visibility="gone"
+                            android:text="Hour Rate"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEhour_rateValue"
+                            android:visibility="gone"
+                            android:text="hour_rateValue"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEhday_rate"
+                            android:visibility="gone"
+                            android:text="Half day"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEhday_rateValue"
+                            android:visibility="gone"
+                            android:text="hday_rateValue"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEfday_rate"
+                            android:visibility="gone"
+                            android:text="Full day"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEfday_rateValue"
+                            android:visibility="gone"
+                            android:text="fday_rateValue"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEesurcharge"
+                            android:visibility="gone"
+                            android:text="Evening Surcharge"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEesurchargeValue"
+                            android:visibility="gone"
+                            android:text="esurchargeValue"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEotsurcharge"
+                            android:text="Overtime Surcharge"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:textColor="@color/mediumBlue"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/SEotsurchargeValue"
+                            android:text="otsurchargeValue"/>
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/bookNow"
+                        android:text="ADD TO BOOKING LIST"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_selector1"/>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/RateMe"
+                        android:text="RATE ME"
+                        android:textStyle="bold"
+                        android:textColor="@color/orangeStore"
+                        android:background="@drawable/button_selector"
+                        android:layout_marginBottom="1dp"/>
+                    <LinearLayout
+                        android:id="@+id/rate"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/bookNow"
+                        android:orientation="vertical">
+                        <RatingBar
+                            android:id="@+id/ratingbar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/ratingBarStyle"
+                            android:numStars="5"
+                            android:stepSize="0.1"
+                            android:isIndicator="true" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/commnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorPrimary"
+                            >
+
+                            <EditText
+                                android:id="@+id/comment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="Leave a Comment"
+                                android:textSize="@dimen/_13sdp"
+                                />
+                        </android.support.design.widget.TextInputLayout>
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/sendrate"
+                            android:text="SEND"
+                            android:textColor="@color/orangeStore"
+                            android:background="@drawable/button_selector"
+                            android:layout_marginBottom="1dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Related Services"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="14dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="4dp"
+                        android:visibility="gone"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view_related"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="40dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

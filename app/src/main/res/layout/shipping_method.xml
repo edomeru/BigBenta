@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="When Do You Want This Service?"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="20sp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Service Date"
+        android:layout_marginRight="@dimen/_73sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:id="@+id/deliverydate"
+        android:focusableInTouchMode="false"
+        app:met_floatingLabelText="Delivery date"
+        app:met_floatingLabel="highlight"
+        android:textSize="15sp"
+        android:singleLine="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Duration of Service?"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="20sp"/>
+    <!--<Spinner-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/deliverydatespinner"-->
+        <!--android:popupBackground="@android:color/white"-->
+        <!--android:scrollbars="none"-->
+        <!--android:spinnerMode="dropdown"/>-->
+    <com.weiwangcn.betterspinner.library.BetterSpinner
+        android:id="@+id/deliverydatespinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:hint="Choose Duration of Service"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Where Do You Want The Service?"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="18sp"/>
+
+    <com.weiwangcn.betterspinner.library.BetterSpinner
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:hint="Choose Location"
+        android:visibility="gone"/>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageButton"
+        android:background="@drawable/button_selector1"
+        android:text="REQUEST TO BOOK"
+        android:textColor="@color/white"
+      />
+
+
+</LinearLayout>

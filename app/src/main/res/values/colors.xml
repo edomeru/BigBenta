@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFB300</color>
+    <color name="colorPrimaryDark">#505050</color>
+    <color name="colorAccent">#212121</color>
+
+    <color name="YELLOW">#fccc00</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="darkblue">#183544</color>
+    <color name="mediumBlue">#31536f</color>
+    <color name="lightblue">#57b4c5</color>
+    <color name="gray">#505050</color>
+    <color name="orangeStore">#fd9927</color>
+    <color name="blueService">#43a5c5</color>
+    <color name="dirtyWhite">#f4f8fb</color>
+    <color name="badgeColor">#fccc00</color>
+    <color name="lightGrayBG">#F5F5F5</color>
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ph.dreambig.bigbenta.marketplacev2.Home.MainActivity"
+    android:windowSoftInputMode="adjustNothing"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true"
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/mediumBlue"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            theme="@style/MyMaterialTheme"
+            >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="horizontal"-->
+               <!--android:weightSum="2"-->
+               <!--&gt;-->
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="start|center"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/toolbar_title"-->
+                <!--android:textColor="@color/YELLOW"-->
+                <!--android:layout_weight="1"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="end|center"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/toolbar_right_subtitle"-->
+                <!--android:layout_toLeftOf="@+id/toolbar_title"-->
+            <!--android:layout_weight="1"-->
+                <!--/>-->
+            <!--</LinearLayout>-->
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                   android:weightSum="1"
+                   >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="start|center"
+                        android:textSize="20sp"
+                        android:text="Store"
+                        android:id="@+id/toolbar_subtitle1"
+                        android:layout_weight="1"
+                        />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:textSize="13sp"-->
+                        <!--android:id="@+id/toolbar_subtitle2"-->
+                        <!--android:layout_toLeftOf="@+id/toolbar_title"-->
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+                </LinearLayout>
+   </LinearLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/chatfab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/_135sdp"-->
+        <!--android:layout_marginRight="@dimen/_35sdp"-->
+        <!--android:layout_gravity="bottom|end"-->
+        <!--app:rippleColor="@color/lightblue"-->
+        <!--app:backgroundTint="@color/orangeStore"-->
+
+        <!--android:src="@drawable/chat" />-->
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@layout/content_main"
+
+        >
+        <LinearLayout
+            android:id="@+id/layout_bottom_bar"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="#222222"
+            android:padding="5dip"
+            android:clickable="true"
+            >
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="5dip"
+                android:background="#000000"
+                android:textColor="#FFFFFF"
+                android:forceHasOverlappingRendering="false"
+                android:windowSoftInputMode="adjustNothing"
+                >
+
+                <ViewFlipper
+                    android:id="@+id/ViewFlipper01"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:windowSoftInputMode="adjustNothing">
+                </ViewFlipper>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_65sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_gravity="bottom|end"
+        app:rippleColor="@color/YELLOW"
+        app:backgroundTint="#96fccc00"
+
+        android:src="@drawable/home" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

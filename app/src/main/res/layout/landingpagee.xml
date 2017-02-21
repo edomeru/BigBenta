@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   android:weightSum="8">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarlanding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        theme="@style/LandingPage.Base"
+       android:layout_weight="1"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/bbmarketplc"
+        android:src="@drawable/bb_logo_lan"
+        android:layout_margin="@dimen/_7sdp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/store"
+        android:src="@drawable/stor"
+        android:layout_margin="@dimen/_7sdp"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/service"
+        android:src="@drawable/services_lan"
+        android:layout_margin="@dimen/_7sdp"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/classified"
+        android:src="@drawable/classified_lan"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_weight="1"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/prime"
+        android:src="@drawable/prime"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Sign In"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:id="@+id/signin"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Help"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_gravity="center"
+        android:id="@+id/hc"
+        android:layout_weight="1"
+
+        />
+</LinearLayout>
