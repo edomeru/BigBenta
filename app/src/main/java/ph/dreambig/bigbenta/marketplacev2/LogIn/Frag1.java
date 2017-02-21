@@ -690,7 +690,7 @@ public class Frag1 extends Fragment {
 
     Call<FacebookResponse> serviceResponseCall = service.getFBLogin(serviceRequest);
 
-
+//sssss
     serviceResponseCall.enqueue(new Callback<FacebookResponse>()
 
     {
